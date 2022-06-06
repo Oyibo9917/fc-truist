@@ -1,0 +1,135 @@
+:root {
+  --primary: #2e1a47;
+  --secondary: #018786;
+  --primary-light: #776e82;
+  --white: #fff;
+  --black:#000;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+a,
+a:checked,
+a:visited,
+a:link {
+    color:var(--white);
+    text-decoration: none;
+}
+
+
+body {
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+
+.header__first-section {
+  background-color: var(--primary);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-section__ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+}
+
+.first-section__link{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.first-section__link-active{
+    border-bottom: solid 1px var(--white);
+    font-weight: 700;
+}
+.img_link{
+    height: 2rem;
+}
+.section__padding{
+    padding: 1rem 5rem;
+}
+.header__input{
+    width: 20rem;
+    height: 3rem;
+    border: solid 1px var(--white);
+    border-radius: .5rem;
+}
+.header__input-button{
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--secondary);
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.hero-page{
+    height: 90vh;
+    border-radius: 1rem;
+   overflow: hidden;
+
+}
+.darker{
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-page h1{
+    font-size: 5rem;
+    font-weight: 200;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hero-page h3{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hero-page p{
+    font-size:2.2rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+.hero-page a{
+    font-size:2.2rem;
+    color: var(--white);
+    padding: 1rem;
+    border:solid 2px var(--white);
+    font-weight: 200;
+    transition: all .5s;
+}
+.hero-page a:hover{
+    background-color: var(--white);
+    color: var(--primary);
+}
+.heading{
+    font-size: 3rem;
+    color:var(--primary);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}

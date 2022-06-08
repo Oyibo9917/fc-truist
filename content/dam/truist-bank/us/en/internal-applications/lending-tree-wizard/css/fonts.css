@@ -1,0 +1,27 @@
+@font-face {
+ font-family: "TTLight";
+ src: url("../resources/fonts/Truist-Trio/TruistTrio_W_Lt.html") format("woff"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_W_Lt-2.html") format("woff2"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_Lt.html") format("ttf");
+}
+
+@font-face {
+ font-family: "TTRegular";
+ src: url("../resources/fonts/Truist-Trio/TruistTrio_W_Rg.html") format("woff"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_W_Rg-2.html") format("woff2"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_Rg.html") format("ttf");
+}
+
+@font-face {
+ font-family: "TTBold";
+ src: url("../resources/fonts/Truist-Trio/TruistTrio_W_Bd.html") format("woff"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_W_Bd-2.html") format("woff2"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_Bd.html") format("ttf");
+}
+
+@font-face {
+ font-family: "TTBolder";
+ src: url("../resources/fonts/Truist-Trio/TruistTrio_W_XBd.html") format("woff"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_W_XBd-2.html") format("woff2"),
+ url("../resources/fonts/Truist-Trio/TruistTrio_XBd.html") format("ttf");
+}

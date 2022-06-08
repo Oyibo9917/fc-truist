@@ -1,0 +1,68 @@
+/*Article templates SOCIAL SHARE*/
+.sticky-social {
+    position: fixed !important;
+    top: 0;
+}
+
+.social-vertical-container {
+    position: relative;
+}
+
+.vertical-desktop {
+    background-color: transparent !important;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    top: 15px;
+    /* transition: all .5s ease-in-out; */
+    animation: fade-in-social .5s ease-in-out forwards;
+}
+
+/* adding class to hide the social sticky nav at the resources section */
+.sticky-hide {
+    /* display: none; */
+    animation: fade-out-social .5s ease-in-out forwards;
+}
+
+.tmp__article--header--page-share .vertical-desktop.sticky-social {
+    z-index: 3;
+}
+
+@media only screen and (max-width: 768px) {
+    .relative .vertical-desktop {
+        position: relative !important;
+        background: transparent;
+        top: 0;
+        padding-bottom: 20px;
+    }
+    }
+
+    @keyframes fade-in-social {
+    0%   {
+        opacity: 0;
+        z-index: -100;
+    }
+    1% {
+        opacity: 0;
+        z-index: 3;
+    }
+    100% {
+        opacity: 1;
+        z-index: 3;
+    }
+    }
+
+    @keyframes fade-out-social {
+    0%   {
+        opacity: 1;
+        z-index: 3;
+    }
+    99% {
+        opacity: 0;
+        z-index: 3;
+    }
+    100% {
+        opacity: 0;
+        z-index: -100;
+    }
+}   

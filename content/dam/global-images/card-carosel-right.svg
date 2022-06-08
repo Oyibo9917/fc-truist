@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #221f1f;
+      }
+    </style>
+  </defs>
+  <g id="Export_Art_-_Strokes_as_Fills" data-name="Export Art - Strokes as Fills">
+    <path class="cls-1" d="M7,23a1,1,0,0,1-.707-1.707L15.58594,12,6.293,2.707A.99989.99989,0,0,1,7.707,1.293l10,10a.99962.99962,0,0,1,0,1.41406l-10,10A.99676.99676,0,0,1,7,23Z"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg class="thumbsup-icon-65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" x="0px" y="0px"
+	 viewBox="0 0 65 65">
+<style type="text/css">
+	.st0{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:none;}
+	.st2{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;}
+</style>
+<g id="Group_16721" transform="translate(-3.352 -3.819)">
+	<path id="Path_10357" class="st0" d="M26.1,39.3c0,0,14.2-1.4,14.6-13.9c0.7-6,9.7-2.7,6.7,10.7c1.5-0.3,3-0.5,4.5-0.5
+		c0,0,9.5-0.4,6.3,6.7c-0.8,1.8,1.9,2.7-0.3,6c-1,1.5,2.1,3.1-0.7,6.7c-1,1.4,1.3,5.2-2.9,5.8s-22.2-1.5-22.2-1.5"/>
+	<g id="Rectangle_777" transform="translate(3.479 29.125)">
+		<path id="Rectangle_3736" class="st1" d="M10.1,7.1h9.2c1.4,0,2.6,1.2,2.6,2.6v20.5c0,1.4-1.2,2.6-2.6,2.6h-9.2
+			c-1.4,0-2.6-1.2-2.6-2.6V9.7C7.5,8.3,8.7,7.1,10.1,7.1z"/>
+		<path id="Rectangle_3737" class="st2" d="M10.1,8h9.2c1,0,1.7,0.8,1.7,1.7v20.5c0,1-0.8,1.7-1.7,1.7h-9.2c-1,0-1.7-0.8-1.7-1.7
+			V9.7C8.4,8.8,9.2,8,10.1,8z"/>
+	</g>
+	<line id="Line_2264" class="st0" x1="37.1" y1="19.7" x2="34.5" y2="16.2"/>
+	<path id="Path_10358" class="st3" d="M42.4,18v-6"/>
+	<path id="Path_10359" class="st3" d="M48.6,19.7l2.7-4.1"/>
+</g>
+</svg>

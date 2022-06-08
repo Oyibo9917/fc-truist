@@ -1,0 +1,18 @@
+
+<svg class="house-icon-65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" x="0px" y="0px"
+	 viewBox="0 0 65 75" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Group_17206" transform="translate(-0.588 -0.02)">
+	<g id="Group_17205">
+		<path id="Line_2677" class="st0" d="M12.2,26.4v31.7h39.4"/>
+		<line id="Line_2678" class="st1" x1="51.6" y1="27.3" x2="51.6" y2="50.6"/>
+		<path id="Path_12098" class="st0" d="M6.5,30.7L31.6,8.2l25.1,23.4"/>
+		<path id="Path_12099" class="st0" d="M43.8,18.7v-5h6.6v11.2"/>
+	</g>
+	<path id="Path_11507" class="st2" d="M25.8,57.6V42.2h9.9v15.4L25.8,57.6z"/>
+</g>
+</svg>

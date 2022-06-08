@@ -1,0 +1,30 @@
+@media (min-width: 941px) and (max-width: 1300px) {
+.navbar-secondary__container {position: relative; justify-content: end; min-height: 5rem;}
+.navbar-secondary__container{background-color:#fff;display:flex;align-items:center;justify-content:end;position:relative;z-index:3;padding-top:10px;padding-bottom:10px}
+.navbar-secondary__cta-wrapper.secondary-navbar--no-cta-present{position:absolute}
+.navbar-secondary__links{margin-right:16px}
+.navbar-secondary__h1{flex-direction:column}
+.navbar-secondary__cta-button-container{position:fixed;bottom:0;left:0;width:100%;background-color:transparent;padding-bottom:20px;padding-top:20px;transition:bottom .4s ease;background:#fff}
+.navbar-secondary__cta-button-container>.cta{display:flex;justify-content:center}
+.navbar-secondary__cta-button-container div div a{display:block;background-color:#2e1a47;color:#fff;width:90%;margin:auto !important;border-radius:10px;font-size:2.2rem;border:.5px solid #fff}
+.display--desktop{display:none}
+.display--mobile{display:block}
+.toggle-button{border-radius:50px;font-size:1.6rem;padding:1em 1.5em;background-color:#fff}
+.fa-chevron-down{color:#7c6992;padding-left:.25em;padding-bottom:.1em}
+.toggle-button:hover{color:#2e1a47 !important;background-color:#afabc9 !important;border:solid 1px #afabc9 !important}
+.toggle-button:hover .fa-chevron-down{color:#2e1a47 !important}
+.navbar-secondary__links>ul{flex-direction:column;padding-inline-start:0}
+#dropdown-menu{position:absolute;z-index:100;background:#f7f7f7;min-width:220px;right:15px;top:-15px;border:solid .5px rgba(0,0,0,0.1);border-radius:10px;box-shadow:0 10px 20px 0 rgba(0,0,0,0.1)}
+.navbar-secondary__link.no-horizontal-margin{padding:.5rem 0;line-height:1.5em}
+.navbar-secondary__link:hover{border:0}
+.navbar-secondary__link.active{border:solid 1px transparent;color:#2e1a47;border-radius:10px 0 0 10px;padding:10px 20px !important;text-align:left;font-size:1.8rem !important;line-height:1.5em !important;background-color:transparent}
+ul.secondary-navbar--page-links-list li:first-child a.navbar-secondary__link{border-radius:10px 10px 0 0 !important}
+ul.secondary-navbar--page-links-list li:last-child a.navbar-secondary__link{border-radius:0 0 10px 10px !important}
+ul.secondary-navbar--page-links-list li a.navbar-secondary__link{border-radius:0 !important}
+.dropLiHover{background-color:#eaeaea}
+.dropLiHover:first-child{border-radius:10px 10px 0 0}
+.dropLiHover:last-child{border-radius:0 0 10px 10px}
+.secondary-navbar--page-links-list li{padding:0;margin-right:0}
+.navbar-secondary__link{font-size:1.8rem}
+a.navbar-secondary__link{text-decoration:none}
+}

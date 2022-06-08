@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>.a{fill:#afabc9;}.b{fill:#2e1a47;}</style>
+    </defs>
+    <g transform="translate(0)">
+        <circle class="a" cx="10" cy="10" r="10" transform="translate(0)"></circle>
+        <path class="b" d="M8.633,6.638.7,6.5a.7.7,0,0,1-.688-.713L.019,5.4A.7.7,0,0,1,0,5.24V.7A.7.7,0,0,1,.7,0H2.695a.7.7,0,0,1,.7.7V3.153l5.3.093a.7.7,0,0,1,.688.712L9.345,5.951a.7.7,0,0,1-.7.688Z"
+        transform="translate(4.784 9.889) rotate(-45)"></path>
+    </g>
+</svg>

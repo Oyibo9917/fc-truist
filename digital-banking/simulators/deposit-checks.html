@@ -1,0 +1,853 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+
+	
+		<meta charset="UTF-8"/>
+		
+		
+		<title>Deposit Checks Mobile Simulator | Truist</title>
+
+		
+	    <meta name="robots" content="noindex, nofollow"/>
+	    
+	    <meta name="description" content="Deposit checks ASAP. Skip the trip with mobile check deposit on the Truist mobile app."/>
+	    <meta name="template" content="truistdotcom-blank-template"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		
+	    
+		
+		<meta property="og:title" content="Deposit Checks Mobile Simulator | Truist"/>
+		<meta property="og:description" content="Deposit checks ASAP. Skip the trip with mobile check deposit on the Truist mobile app."/>
+		<meta property="og:image" content="https://www.truist.com/"/>
+		<meta property="og:image:alt"/>
+		<meta property="og:image:width" content="600"/>
+		<meta property="og:image:height" content="315"/>
+		<meta property="og:url" content="https://www.truist.com/digital-banking/simulators/deposit-checks"/>
+		<meta property="og:site_name" content="Truist"/>
+		<meta property="fb:app_id" content="fb"/>
+		
+			
+		
+		<meta property="icon"/>
+		
+	    
+		<meta property="eyebrow"/>
+		<meta property="line-of-business"/>
+		<meta property="category"/>
+		<meta property="product"/>
+	
+		
+		
+		
+		
+
+	
+    
+	
+	
+		<!-- For cannonical tag url -->
+		
+	    <link rel="canonical" href="https://www.truist.com/digital-banking/simulators/deposit-checks"/>
+
+
+	
+    	
+	
+
+	<!--For Data Layer -->
+	<script type="text/javascript">
+    window.glbPageData = window.glbPageData || [];
+    glbPageData.ptLOB= "";
+    glbPageData.ptProductService= "";
+    glbPageData.ptPageGroup= "";
+    glbPageData.ptPageContentType= "";
+    glbPageData.ptPageTopic= "";
+    glbPageData.prodView= "";
+</script>
+
+	<!-- For prefetch  -->
+	<!-- prefetch fonts-->
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/icomoon.ttf" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/icomoon.woff" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/sun-icons-UXd1Fq6.eot" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/sun-icons-UXd1Fq6.ttf" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/sun-icons-UXd1Fq6.woff" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/truist-icons.eot" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/truist-icons.svg" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/truist-icons.ttf" as="font/woff2" crossorigin="anonymous"/>
+
+	<!-- mandatory script starts -->
+<Script>
+(function marTech(parentScope, marTechInterface) {
+	'use strict';
+	var version = '1.3.0';
+	parentScope[marTechInterface] = {};
+	// find or listen for tag manager ASAP
+	var tagManager = {};
+	var buses = {
+		launch: {
+			isPresent: !!window._satellite && !!window._satellite.company,
+			trigger: function (ruleName, eventDetail) {
+				window._satellite.track(ruleName, eventDetail);
+			},
+			get: function (varName) {
+				return window._satellite.getVar(varName);
+			}
+		},
+		ensighten: {
+			isPresent: !!window.Bootstrapper,
+			trigger: function (ruleName, eventDetail) {
+				window.Bootstrapper.ensEvent.trigger(ruleName, eventDetail);
+			},
+			get: function (varName) {
+				return window.Bootstrapper.getVariable(varName);
+			}
+		}
+	};
+	var dispatchMarTechInit = function(){
+		tagManager.trigger('marTechInit', parentScope[marTechInterface]);
+	};
+	var init = function () {
+		for (var bus in buses) {
+			if (buses.hasOwnProperty(bus) && buses[bus].isPresent) {
+				tagManager = buses[bus];
+				break;
+			}
+		}
+		if (tagManager.isPresent) {
+			dispatchMarTechInit();
+		} else {
+			var tagManagerInit = function (tagManagerName, tagManagerInitEvent) {
+				tagManager = buses[tagManagerName];
+				trackQueue();
+				dispatchMarTechInit();
+			}
+			window.addEventListener('BootstrapInitialized', function () {
+				tagManagerInit('ensighten');
+			});
+			window.addEventListener('AdobeLaunchInitialized', function () {
+				tagManagerInit('launch');
+			});
+		}
+	};
+	// Define everything locally, then expose refrencially
+	var marTechData = {}; // centralized data for Analytics, Target, and others
+	var marTechCalls = []; // array of previous calls
+	var setVar = function (name, value) {
+		if (typeof name === 'string' && name) {
+			marTechData[name] = value;
+			var trackable = false;
+			switch (typeof value) {
+				case 'string':
+				case 'number':
+					trackable = true;
+			}
+		}
+	};
+	var getVar = function (name,fromTagManager) {
+		if (typeof name === 'string' && name) {
+			if (fromTagManager && tagManager.get) {
+				return tagManager.get(name);
+			}
+			return marTechData[name];
+		}
+	};
+	var getDataElement = function (name) {
+		getVar(name,true);
+	};
+	var clearVar = function (name) {
+		if (typeof name === 'string' && name && typeof marTechData[name] !== 'undefined') {
+			delete marTechData[name];
+		}
+	};
+	var setVars = function () {
+		// Accepts a flat name-value paired object or a csv of name1,value1,name2,value2,etc.
+		var i = 0,
+			l = 0;
+		if (typeof arguments[0] === 'object') {
+			var names = Object.keys(arguments[0]);
+			l = names.length;
+			for (i; i < l; i++) {
+				setVar(names[i], arguments[0][names[i]]);
+			}
+		} else if (typeof arguments[0] === 'string') {
+			l = arguments.length;
+			for (i; i < l; i += 2) {
+				setVar(arguments[i], arguments[i + 1]);
+			}
+		}
+	};
+	var getVars = function () {
+		// Returns requested values based on a list of names
+		var i = 0,
+			l = arguments.length,
+			values = [];
+		for (i; i < l; i++) {
+			if (typeof arguments[i] === 'string') {
+				values.push(getVar(arguments[i]));
+			}
+		}
+		return values;
+	};
+	var clearVars = function () {
+		// Deletes values based on a list of names
+		var i = 0,
+			l = arguments.length;
+		for (i; i < l; i++) {
+			if (typeof arguments[i] === 'string') {
+				clearVar(arguments[i]);
+			}
+		}
+	};
+	var getAllVars = function () {
+		//IE cannot do this without polyfill
+		if(Object.assign){
+			var marTechDataCache = Object.assign({}, marTechData);
+			return marTechDataCache;
+		}
+	};
+	var clearAllVars = function () {
+		marTechData = {};
+	};
+	var tagManagerCall = function (callType, options) {
+		if (!callType) {
+			return;
+		}
+		options = options || {};
+		if (options.cData) {
+			setVars(options.cData);
+		}
+		options.marTechData = getAllVars();
+		options.actionElement = options.actionElement || true;
+		var called = false;
+		if (tagManager.trigger) {
+			tagManager.trigger(callType, options);
+			called = true;
+		}
+		if (options.callback && options.timeout && !called){
+			options.callTimeout = setTimeout(options.callback, options.timeout);
+		}
+		//make sure to store the data with a proper name
+		marTechCalls.push({
+			'callType': callType,
+			'called': called,
+			'options': options
+		});
+		if (!options.keepVars) {
+			clearAllVars();
+		} // This logic is concerning for sendEvent()
+		return options.marTechData;
+	};
+	var sendEvent = function (type, options) {
+		tagManagerCall(type, options);
+	};
+	var trackState = function (cData) {
+		tagManagerCall('trackState', {
+			'cData': cData
+		});
+	};
+	var trackAction = function (cData, actionElement) {
+		tagManagerCall('trackAction', {
+			'cData': cData,
+			'actionElement': actionElement
+		});
+	};
+	var getOffers = function (cData, callback, timeout) {
+		if (typeof cData === 'undefined') {
+			//Look for offers cache to return.
+			return getVar('offers');
+		} else if (typeof callback !== 'function') {
+			console.log('cannot call getOffers without a callback');
+			return;
+		} else {
+			tagManagerCall('getOffers', {
+				'cData': cData,
+				'callback': callback,
+				'keepVars': true,
+				'timeout': timeout || 500
+			});
+		}
+	};
+	var offerRendered = function (cData, offerMetadata) {
+		tagManagerCall('offerRendered', {
+			'cData': cData,
+			'offerMetadata': offerMetadata
+		});
+	};
+	var offerFailed = function (cData, offerMetadata) {
+		tagManagerCall('offerFailed', {
+			'cData': cData,
+			'offerMetadata': offerMetadata
+		});
+	};
+	var offerInteraction = function (cData, offerMetadata, actionElement) {
+		tagManagerCall('offerInteraction', {
+			'cData': cData,
+			'offerMetadata': offerMetadata,
+			'actionElement': actionElement
+		});
+	};
+	var trackQueue = function () {
+		// Tracks all pending tracking calls at 200ms intervals to ensure proper processing
+		marTechCalls.forEach(function (call, index) {
+			if (!call.called) {
+				if(call.options && call.options.callTimeout){
+					clearTimeout(call.options.callTimeout);
+				}
+				setTimeout((function (index) {
+					return function () {
+						//console.log('trackQueue for call',index,call);
+						tagManagerCall(call.callType, call.options);
+						marTechCalls[index].called = true;
+					};
+				}(index)), (200 * index));
+			}
+		});
+	};
+	parentScope[marTechInterface].getDataElement = getDataElement;
+	parentScope[marTechInterface].setVar = setVar;
+	parentScope[marTechInterface].getVar = getVar;
+	parentScope[marTechInterface].clearVar = clearVar;
+	parentScope[marTechInterface].setVars = setVars;
+	parentScope[marTechInterface].getVars = getVars;
+	parentScope[marTechInterface].getOffers = getOffers;
+	parentScope[marTechInterface].offerRendered = offerRendered;
+	parentScope[marTechInterface].offerFailed = offerFailed;
+	parentScope[marTechInterface].offerInteraction = offerInteraction;
+	parentScope[marTechInterface].clearVars = clearVars;
+	parentScope[marTechInterface].getAllVars = getAllVars;
+	parentScope[marTechInterface].clearAllVars = clearAllVars;
+	parentScope[marTechInterface].trackState = trackState;
+	parentScope[marTechInterface].trackAction = trackAction;
+	parentScope[marTechInterface].version = version;
+	init();
+})(window, 'marTech');
+</script>
+<!-- mandatory script ends -->
+
+	
+	<script type="text/javascript" src="http://assets.adobedtm.com/550322ae7d69/9113c9ef16ff/launch-003a007a2c4b.min.js"></script>
+    
+
+    
+
+	<link rel="stylesheet" href="https://www.truist.com/content/dam/truist-bank/us/en/mobile-interactive/internal-transfer/css/truist-experience-sims-v2.css"/>
+	
+
+
+
+
+	<script type="text/javascript" src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	
+
+
+	<script type="text/javascript" src="https://unpkg.com/@babel/polyfill@7.6.0/dist/polyfill.min.js"></script>
+	
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+	
+
+
+
+
+
+
+
+    
+<link rel="stylesheet" href="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.25a8717a0855da7d862c70f8ff5ab45e.css" type="text/css">
+
+
+
+
+<!-- Author specific CSS -->
+
+    
+
+
+
+
+<!-- Site Specific CSS -->
+
+     
+         
+             
+    
+<link rel="stylesheet" href="https://www.truist.com/etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.62a0d506e08ab81427b152ef29bcfa53.css" type="text/css">
+
+
+
+         
+     
+
+<!-- Site specific CSS Asset -->
+
+    
+        <link rel="stylesheet" type="text/css" href="https://www.truist.com/content/dam/truist-bank/css/custom.css"/>
+    
+
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+
+<!-- Live Chat Configuration script -->
+<script type="text/javascript" src="https://dias.bank.truist.com/ui/scripts/truist_common.js"></script>
+<!-- Login Configuration script -->
+
+</head>
+    <body class="page basicpage empty" id="page-cedffc42d5">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            <div class="sun-page" data-suntrust-class="suntrust-page" id="suntrust-page">
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="skipcontent aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<div class="author-skipcontent-styling">
+	<a class="skip-main" href="#main">Skip to main content</a>
+</div></div>
+<div class="headertag aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<header class="global-header author-headertag-styling">
+	
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    
+    
+</div>
+
+</header></div>
+<div class="maincontent aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<div class="author-maincontent-styling">
+<a name="main"></a>
+</div>
+</div>
+<div class="maintag aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<main id="main" tabindex="-1" class="global-main author-maintag-styling">
+	
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 aem-Grid--phone--24 ">
+    
+    <div class="htmlcontainer aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--phone--24 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0">
+
+<!-- MCD --> 
+<style>
+@media only screen and (max-width: 19200px){
+.iphone-shell {
+    display: block;
+}
+
+.mob .device-shell img {
+    border-radius: 5%;
+}
+}
+.empty .disc-back-to-content {display: none;}
+.simulator-container .screen div {
+    overflow: hidden;
+    height: auto;
+}
+.simulator-container .container {justify-content: center;}
+.mob .help-text h3 {
+    margin: 0;
+    padding: 0;
+}
+.help-text h3 {
+    padding: 0;
+    width: 100%;
+    font-size: 1.22em;
+    font-weight: 400;
+}
+
+.simulator-container .container p {
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.help-text p {
+    padding: 0;
+	margin: 0;
+}
+.simulator-container .help-text button {
+    font-size: 1em;
+	font-weight: 400;
+}
+
+.simulator-container .backer {
+    border: 0 !important;
+    padding: 10px 0;
+}
+.help-text {
+    min-height: auto;
+    font-family: 'Truist Trio';
+	max-width: 460px;
+	margin: 0 0 1em 0;
+	width: auto;
+	height: 140px;
+}
+.congratulations {left: 0; width: 100%;}
+@media only screen and (min-width: 769px) {
+.iphone-shell {
+    display: block;
+}
+.mob .device-shell img {
+    border-radius: 5%;
+}
+}
+@media only screen and (max-width: 768px) {
+.simulator-container .tryme img {
+    height: 30px;
+}
+.simulator-container .lg-container {
+    margin: 0;
+    padding: 0;
+}
+.help-text {border-radius: 0; max-width: 355px; height: 153px; margin: 0 0 1em 9px;}
+.simulator-container .mob .device-shell img {
+    
+}
+}
+        <!-- 
+          	#app-mcd .device-shell .one { top:420px; left: 152px; }
+	        #app-mcd .device-shell .two {top: 690px; left: 222px;}
+	      	#app-mcd .device-shell .three {top: 200px; left: 265px;}
+	        #app-mcd .device-shell .four {top: 185px; left: 200px;}
+	        #app-mcd .device-shell .five {top: 250px; left: 260px;}
+	        #app-mcd .device-shell .six {top: 175px; left: 150px;}
+	        #app-mcd .device-shell .seven {top: 520px; left: 150px;}
+	        #app-mcd .device-shell .eight {top: 415px; left: 155px;}
+	        #app-mcd .device-shell .nine {top: 310px; left: 255px;}
+	        #app-mcd .device-shell .ten {top: 400px; left: 150px;}
+	        #app-mcd .device-shell .eleven {top: 455px; left: 150px;}
+	        #app-mcd .device-shell .twelve {top: 455px; left: 150px;}
+	        #app-mcd .device-shell .thirteen {top: 355px; left: 15px;}
+	        #app-mcd .device-shell .fourteen {top: 475px; left: 151px;}
+	       	#app-mcd .device-shell .fifteen {top: 405px; left: 215px;}
+	        #app-mcd .device-shell .sixteen {top: 650px; left: 150px;}
+
+	        #app-mcd .device-shell .end {top: 308px; left: 150px;}
+	        #app-mcd .tryme img 
+        { 
+          left:226px;
+          top:427px;
+        }
+.congratulations {left:67px;}
+        -->
+</style>
+<div class="simulator-container">
+	<div id="app-mcd" class="container mob" :aria-label='sim_name' role="complementary" >
+		<div class="lg-container" >
+		 <div class="help-text" aria-live="polite" >
+		   		<h2 class="sr-only" v-html='sim_name'> </h2>    
+    		  <img v-bind:src="img_directory + '/core/background.png'" alt="">  
+				<h3 v-bind:class="steps[root_step].position" v-if="sim_steps >= root_step" >
+				Step {{root_step}} of {{sim_steps}}
+				</h3>
+				<h3  style="left:0" v-else >Congratulations</h3>
+				<p v-if="sim_steps >= root_step " v-html="steps[root_step].content" v-for= "step for steps" >
+					{{steps[root_step].content}}</p>
+				<p v-else >{{ laststeptext }}</p>
+				<button :aria-label="ariaBack"  class="backer"  v-show="root_step !=1 && finish > root_step " v-on:click="backStep" >&#8249; back
+				</button>
+			</div><!-- help text -->
+				<img src='http://static.truist.com/content/dam/truist-bank/us/en/images/simulators/core/phone-shell-gen-two.png' role="presentation" class="iphone-shell"/> 
+
+   			 <div class="device-shell {{steps[root_step].position}} ">
+   	 			<div class="screen">
+   	 				   	 		
+   	 			<div v-if="(root_step <= sim_steps)" >
+   	 				
+
+   	 			
+   	 			<img v-bind:src="currentStep" v-bind:alt='alttext'/> 
+   	 			</div>   
+					<div v-else ><p class="congratulations">{{laststeptext}}</p>
+					<img v-bind:src="img_directory + '/core/end.jpg'" v-bind:alt='alttext2' width='336' height='600'/> 
+						</div>
+						<div class="tryme">
+							<img v-show="root_step ==1" v-bind:src="img_directory + '/core/tryme' + orientation + '.png'" class="tryme" alt="">
+						</div>
+			<button :aria-label="ariaForward" style=" outline: none" v-if="(root_step <= sim_steps)"  v-bind:class="steps[root_step].position" class="sonar" v-for= "step for steps" 
+			 v-on:click="appStepForward"   >
+			</button>
+			<button  :aria-label="ariaEnd" style="outline: none"  class=" sonar end"  v-else  v-on:click="appRestart"  >  
+			</button>
+		</div><!-- screen --> 
+		</div><!-- phone shell --> 
+	</div><!-- lg container --> 
+</div><!-- container --> 
+</div><!-- banking container for truist --> 
+	<script type="text/javascript">
+		var app = new Vue ({
+			el: '#app-mcd', 
+			data: {
+				sim_steps: '16',
+				sim_name: 'mobile check deposit on Truist app',
+				sim: 'm-app-mcd',
+				laststeptext: 'That’s it! You’re all set with mobile check deposit.',
+			orientation: '', // leave blank for default or _rt for switching green arrow
+
+
+				steps: [
+		
+{
+    step: 0, 
+    position: 'zero', 
+    content: 'index' 
+},
+{
+    step: '1', 
+    position: 'one', 
+    content: 'Sign in to the Truist Mobile app.' 
+},
+{
+    step: 2,
+    position: 'two', 
+     content: 'Select <strong>Deposits</strong> from the bottom menu.' 
+},
+{
+    step: 3, 
+    position: 'three', 
+    content: 'Select <strong>Deposit to</strong>. ' 
+},
+{
+    step: 4, 
+    position: 'four', 
+    content: 'Choose the account to deposit into.' 
+},
+{
+    step: 5,
+    position: 'five', 
+     content: 'Select enter amount.' 
+},
+{
+    step: 6,
+    position: 'six',  
+    content: 'Enter the exact amount.' 
+},
+{
+    step: 7, 
+    position: 'seven', 
+    content: 'For this example, we will deposit $50.00.' 
+},
+{
+    step: 8, 
+    position: 'eight', 
+    content: 'Select <strong>Done</strong>.' 
+},
+{
+    step: 9, 
+    position: 'nine', 
+    content: 'Select <strong>Take photos</strong>. ' 
+},
+{
+    step: 10, 
+    position: 'ten', 
+    content: 'Place your check face-up on a dark background, in good lighting, and select front check image.' 
+},
+{
+    step: 11, 
+    position: 'eleven',
+    content: 'Your device automatically takes the photo.' 
+},
+{
+    step: 12, 
+    position: 'twelve',
+    content: 'Flip over your check and sign it.' 
+},
+{
+    step: 13, 
+    position: 'thirteen',
+    content: 'Your device automatically takes the photo when focus is clear.' 
+},
+{
+    step: 14, 
+    position: 'fourteen',
+    content: 'Review your information and select <strong>Deposit</strong>.' 
+},
+{
+    step: 15, 
+    position: 'fifteen',
+    content: 'Confirm your deposit.' 
+},
+{
+    step: 16, 
+    position: 'sixteen',
+    content: 'Select <strong>Go to my accounts</strong> to return to main menu' 
+},
+    
+
+
+
+					],
+				ui_image_alt: 'Screenshot of Mobile phone',
+				alttext: 'Mobile Phone Screen',
+				alttext2: 'Try Me', // for Try Me
+				//img_directory: '/content/dam/truist-bank/us/en/images/simulators/',
+				//img_directory: '/content/dam/truist-bank/us/en/images/simulators/',
+				img_directory: '/content/dam/truist-bank/us/en/images/simulators/',
+				ariaBack: 'back to previous step',
+				ariaFor: 'Next Step for',
+				root_step: 1, // change to 0 if including log on screen
+				},				
+				methods: {
+					appStepForward: function () {
+						this.root_step +=1// this increments steps forward
+						window.digitalData.eventTrack("simulator-update",{eventName:"simulator-update",sim_id:this.sim,sim_function: 'forward',sim_steps:this.sim_steps,step_num:this.root_step,step_text:(this.sim_steps >= this.root_step )?this.steps[this.root_step].content:this.laststeptext})
+					}, 
+					appRestart: function () {
+						this.root_step = 1 // this restarts app to beginning
+						window.digitalData.eventTrack("simulator-update",{eventName:"simulator-update",sim_id:this.sim,sim_function: 'restart',sim_steps:this.sim_steps,step_num:this.root_step,step_text:this.steps[this.root_step].content})
+					},
+					backStep: function () {
+						this.root_step -= 1 // this restarts app to beginning
+						window.digitalData.eventTrack("simulator-update",{eventName:"simulator-update",sim_id:this.sim,sim_function: 'back',sim_steps:this.sim_steps,step_num:this.root_step,step_text:this.steps[this.root_step].content})
+					}
+				},
+				computed: {
+					currentStep: function () {
+						return this.img_directory + '/' + this.sim + '/' + this.root_step + '.png' //builds directory for simulator
+					},
+					finish: function () {
+							return parseInt(this.sim_steps) + 1
+					}, // computes additional vaule to stop back button from showing up on finish 
+					ariaBacker: function () {
+						return this.ariaBack + ' ' + this.sim_name
+					}, 
+					ariaForward: function () {
+						return this.ariaFor + ' ' + this.sim_name
+					},
+					ariaEnd: function () {
+						return 'Start over for' + ' ' + this.sim_name
+					}
+					 
+				}
+			})
+	</script>
+</div>
+
+    
+</div>
+
+</main></div>
+
+    
+</div>
+</div>
+
+     <div id="tru-floating--bottom-right" class="tru-floating--bottom-right">
+     	<div id="idLpMessagingHelp"></div>
+     </div>
+</div>
+            
+    
+    
+<!---  footer library starts -->
+
+
+
+
+
+
+<script src="https://search.truist.com/searchblox/truistheader/facet.js" async>
+</script>
+
+<script src="https://search.truist.com/searchblox/truistheader/build.js" async>
+</script>
+
+
+
+
+
+
+
+    
+    
+<script src="https://www.truist.com/etc.clientlibs/clientlibs/granite/jquery.min.f65891607efbe75b84a8031849cec6c7.js"></script>
+<script src="https://www.truist.com/etc.clientlibs/clientlibs/granite/utils.min.308082b4c347f4fec37ffef277d39d0e.js"></script>
+<script src="https://www.truist.com/etc.clientlibs/clientlibs/granite/jquery/granite.min.d9075d4175ab7b0e3ccf4305a4089645.js"></script>
+<script src="https://www.truist.com/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.f01ce1db0b144a9a853f5accf9564ad4.js"></script>
+
+
+
+    
+       
+     
+     
+
+    
+        
+            
+                
+    
+<script src="https://www.truist.com/etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.d41d8cd98f00b204e9800998ecf8427e.js"></script>
+
+
+
+            
+        
+    
+<!-- Author specific CSS -->
+
+    
+
+
+
+
+<!---  footer library ends -->
+
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+
+
+<!-- Truist adobe launch Mandatory script Starts-->
+<script type="text/javascript"> 
+            try { 
+                    _satellite.pageBottom(); 
+                  } catch ( error ) { 
+            if ( error ) { 
+            console.log( error ); 
+          } 
+        } 
+ </script>
+<!-- Truist adobe launch Mandatory script Ends-->
+
+    </body>
+</html>

@@ -1,0 +1,251 @@
+.truist-global-staticcard-row h1, .truist-global-staticcard-row h2, .truist-global-staticcard-row h3, .truist-global-staticcard-row h4, .truist-global-staticcard-row h5, .truist-global-staticcard-row h6 {margin: 0;}
+
+/*GRID + STATIC CARD*/
+/*even columns*/
+.static-card__custom--even-columns .truist-global-staticcard-column {padding-top: 3rem; padding-bottom: 2rem;}
+.static-card__custom--even-columns.static-card__custom--even-columns--remove-top-padding .truist-global-staticcard-column {padding-top: 0;}
+@media (min-width: 769px){
+    .static-card__custom--even-columns > div.aem-Grid {display: flex;}
+    .static-card__custom--even-columns > div.aem-Grid > div.staticcard {display: flex;}
+}
+@media (max-width: 768px){
+    .static-card__custom--even-columns .truist-global-staticcard-column {margin-top: 0; margin-bottom: 2rem;}
+}
+@media (max-width: 1023px){
+    .static-card__custom--even-columns .truist-global-staticcard-column {max-width: none; width: 100%; margin-top: 0;}
+}
+
+/*column spacing with and without indent (margin)*/
+@media (min-width: 769px){
+    .static-card__custom--column-spacing-2 {margin-right: -8.333%;}
+    .static-card__custom--column-spacing-3,
+    .static-card__custom--column-spacing-2--sm {margin-right: -4.167%;}
+    .static-card__custom--column-spacing-3--sm,
+    .static-card__custom--column-spacing-4 {margin-right: -2.083%;}
+    .static-card__custom--column-spacing-3 > div.aem-Grid > div.staticcard,
+    .static-card__custom--column-spacing-2--sm > div.aem-Grid > div.staticcard {padding-right: 4.167%; margin-left: 0% !important;}
+    .static-card__custom--column-spacing-4 > div.aem-Grid > div.staticcard,
+    .static-card__custom--column-spacing-3--sm > div.aem-Grid > div.staticcard {padding-right: 2.083%; margin-left: 0% !important;}
+    .static-card__custom--column-spacing-2 > div.aem-Grid > div.staticcard {padding-right: 8.333%; margin-left: 0% !important;}
+    /*4 column - remove cta min width*/
+    .static-card__custom--column-spacing-4 .cta a {min-width: auto;}
+}
+@media (min-width: 769px) and (max-width: 1200px){
+    /*4 column spacing tablet wrap for even cards*/
+    .static-card__custom--even-columns.static-card__custom--column-spacing-4 > div.aem-Grid {flex-wrap: wrap;}
+    .static-card__custom--even-columns.static-card__custom--column-spacing-4 > div.aem-Grid > div.staticcard {width: 50% !important;}
+    .static-card__custom--even-columns.static-card__custom--column-spacing-4 div.staticcard:nth-child(3),
+    .static-card__custom--even-columns.static-card__custom--column-spacing-4 div.staticcard:nth-child(4) {margin-top: 2.083%;}
+}
+@media (max-width: 1023px) {
+    .static-card__custom--column-spacing-2 .truist-global-staticcard-column,
+    .static-card__custom--column-spacing-3 .truist-global-staticcard-column,
+    .static-card__custom--column-spacing-4 .truist-global-staticcard-column,
+    .static-card__custom--column-spacing-2--sm .truist-global-staticcard-column,
+    .static-card__custom--column-spacing-3--sm .truist-global-staticcard-column {max-width: none; width: 100%; margin-top: 0;}
+}
+
+/*borders*/
+.static-card__custom--single-border .truist-global-staticcard-content-padding,
+.static-card__custom--single-border .truist-global-staticcard-content-padding ~ p {padding: 0;}
+.static-card__custom--single-border .truist-global-staticcard-content-padding ~ ul,
+.static-card__custom--single-border .truist-global-staticcard-content-padding ~ ol {margin: inherit;}
+.static-card__custom--single-border > div.aem-Grid > div.staticcard {margin-bottom: 4rem; border-bottom: 1px solid #cfcfcf; border-radius: 0;}
+.static-card__custom--single-border > div.aem-Grid > div.staticcard:last-child {border: none; margin-bottom: 0;}
+.static-card__custom--single-border .truist-global-staticcard-column {padding-bottom: 0; padding-top: 0; border-radius: 0; background: none; border: none;}
+.static-card__custom--single-border .truist-global-staticcard-img-top {padding-right: 0 !important; padding-left: 0 !important; padding-top: 0;}
+/*bottom*/
+.static-card__custom--single-border--bottom .truist-global-staticcard-column,
+.static-card__custom--single-border--bottom--desktop .truist-global-staticcard-column {display: block; padding-bottom: 0; margin-bottom: 2rem; border-radius: 0; border-bottom: 1px solid #cfcfcf;}
+.static-card__custom--single-border--bottom > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column,
+.static-card__custom--single-border--bottom--desktop > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column {border: none; margin-bottom: 0;}
+.static-card__custom--single-border--bottom > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4),
+.static-card__custom--single-border--bottom--desktop > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4) {margin-bottom: 0;}
+@media (max-width: 1023px){
+    /*bottom*/
+    .static-card__custom--single-border--bottom .truist-global-staticcard-column,
+    .static-card__custom--single-border--bottom--desktop .truist-global-staticcard-column {max-width: none; width: 100%; margin-top: 0;}
+}
+@media (max-width: 768px){
+    /*bottom -- desktop only*/
+    .static-card__custom--single-border--bottom--desktop .truist-global-staticcard-column {border: none;}
+}
+@media (min-width: 769px){
+    .static-card__custom--single-border > div.aem-Grid > div.staticcard {border-right: 1px solid #cfcfcf; border-bottom: none;}
+    .static-card__custom--single-border > div.aem-Grid > div.staticcard {padding-bottom: 0; margin-bottom: 0;}
+    .static-card__custom--single-border .truist-global-staticcard-column {margin-bottom: -2rem;}
+    /*single border column spacing*/
+    .static-card__custom--single-border.static-card__custom--column-spacing-3 > div.aem-Grid > div.staticcard,
+    .static-card__custom--single-border.static-card__custom--column-spacing-2--sm > div.aem-Grid > div.staticcard {padding-right: 4.167%; margin-left: 4.167% !important;}
+    .static-card__custom--single-border.static-card__custom--column-spacing-2 > div.aem-Grid > div.staticcard {padding-right: 8.333%; margin-left: 8.333% !important;}
+    /*outer margins*/
+    .static-card__custom--single-border.static-card__custom--column-spacing-4--margin {margin-right: -2.083%; margin-left: -2.083%;}
+    .static-card__custom--single-border.static-card__custom--column-spacing-3--margin {margin-right: -4.167%; margin-left: -4.167%;}
+    .static-card__custom--single-border.static-card__custom--column-spacing-2--margin {margin-right: -10%; margin-left: -10%;}
+}
+
+
+/*3 features*/
+.static-card__custom--3features--product .truist-global-staticcard-cardcontent,
+.static-card__custom--3features--product .truist-global-staticcard-cardcontent ~ p,
+.static-card__custom--3features--compare .truist-global-staticcard-cardcontent,
+.static-card__custom--3features--compare .truist-global-staticcard-cardcontent ~ p {color: #2E1A47;}
+@media (max-width: 768px){
+    .static-card__custom--3features--product .truist-global-staticcard-cardtitle {font-size: 1.8rem;}
+    .static-card__custom--3features--compare .truist-global-staticcard-cardtitle {font-size: 1.5rem;}
+    .static-card__custom--3features--product .truist-global-staticcard-cardcontent,
+    .static-card__custom--3features--product .truist-global-staticcard-cardcontent ~ p,
+    .static-card__custom--3features--compare .truist-global-staticcard-cardcontent,
+    .static-card__custom--3features--compare .truist-global-staticcard-cardcontent ~ p {font-size: 1.5rem; line-height: 1.5em; margin-bottom: 0;}
+    /*single border*/
+    .static-card__custom--3features--product.static-card__custom--single-border > div.aem-Grid > div.staticcard,
+    .static-card__custom--3features--compare.static-card__custom--single-border > div.aem-Grid > div.staticcard {margin-bottom: 0; border: none;}
+    /*left align in mobile*/
+    .static-card__custom--3features--product .truist-global-staticcard-column-align-center,
+    .static-card__custom--3features--compare .truist-global-staticcard-column-align-center {text-align: left;}
+}
+
+/*column width auto*/
+@media (min-width: 769px){
+    .static-card__custom--column-width-auto > div.aem-Grid > div.staticcard {width: auto !important;}
+    .static-card__custom--3features--product.static-card__custom--column-width-auto > div.aem-Grid > div.staticcard,
+    .static-card__custom--3features--compare.static-card__custom--column-width-auto > div.aem-Grid > div.staticcard {min-width: 20%; max-width: 33%;}
+}
+
+/**Template Policies**/
+/*image float left - desktop only*/
+@media (min-width: 769px){
+    .static-card__custom--image-float-left .truist-global-staticcard-column {display: block; padding-bottom: 0; margin-bottom: 2rem; border-radius: 0;}
+    .static-card__custom--image-float-left .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(1) {float: left; margin-right: 2rem;}
+    .static-card__custom--image-float-left .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(3) {display: flex; margin-bottom: 1rem;}
+    .static-card__custom--image-float-left .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4) {display: flex;}
+    .static-card__custom--image-float-left .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(5) {display: flex;}
+    .static-card__custom--image-float-left > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column {border: none; margin-bottom: 0;}
+    .static-card__custom--image-float-left > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4) {margin-bottom: 0;}
+}
+/*image float left - mobile only*/
+@media (max-width: 768px){
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column {display: block; padding-bottom: 0;}
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(1) {float: left; margin-right: 2rem;}
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(3) {display: flex; margin-bottom: 1rem;}
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4) {display: flex;}
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(5) {display: flex;}
+    .static-card__custom--image-float-left--mobile > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column {margin-bottom: 0;}
+    .static-card__custom--image-float-left--mobile > div.aem-Grid > div.staticcard:last-child .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4) {margin-bottom: 0;}
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column div.truist-global-staticcard-row:not(:first-child) {margin-left: 8.5rem;}
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-img {width: 6.5rem; height: auto;}
+}
+@media (max-width: 1023px){
+    .static-card__custom--image-float-left .truist-global-staticcard-column,
+    .static-card__custom--image-float-left--mobile .truist-global-staticcard-column {max-width: none; width: 100%; margin-top: 0;}
+}
+
+/*remove fields*/
+.static-card__custom--remove-badge .truist-global-staticcard-img-badge,
+.static-card__custom--remove-image .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(1),
+.static-card__custom--remove-eyebrow .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(2),
+.static-card__custom--remove-title .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(3),
+.static-card__custom--remove-description .truist-global-staticcard-column div.truist-global-staticcard-row:nth-child(4) {display: none;}
+.static-card__custom--remove-image-width .truist-global-staticcard-img {width: auto; height: auto;}
+.static-card__custom--remove-image-width .truist-global-staticcard-img-top {padding-right: 3rem; padding-left: 3rem;}
+.static-card__custom--remove-padding .truist-global-staticcard-column {padding-top: 0; padding-bottom: 0;}
+.static-card__custom--remove-padding .truist-global-staticcard-content-padding,
+.static-card__custom--remove-padding .truist-global-staticcard-content-padding ~ p {padding-left: 0; padding-right: 0;}
+.static-card__custom--remove-padding .truist-global-staticcard-content-padding ~ ul,
+.static-card__custom--remove-padding .truist-global-staticcard-content-padding ~ ol {margin: inherit;}
+.static-card__custom--remove-padding .truist-global-staticcard-img-top {padding-left: 0; padding-right: 0; padding-top: 0;}
+@media (max-width: 768px){
+    .static-card__custom--remove-image-width .truist-global-staticcard-img-top {padding-right: 2rem; padding-left: 2rem;}
+    .static-card__custom--remove-padding .truist-global-staticcard-img-top,
+    .static-card__custom--remove-padding--mobile .truist-global-staticcard-img-top,
+    .static-card__custom--remove-padding--mobile .truist-global-staticcard-content-padding,
+    .static-card__custom--remove-padding--mobile .truist-global-staticcard-content-padding ~ p {padding-right: 0; padding-left: 0;}
+    .static-card__custom--remove-padding--mobile .truist-global-staticcard-content-padding ~ ul,
+    .static-card__custom--remove-padding--mobile .truist-global-staticcard-content-padding ~ ol {margin: inherit;}
+    .static-card__custom--remove-padding .truist-global-staticcard-column,
+    .static-card__custom--remove-padding--mobile .truist-global-staticcard-column {padding-bottom: 0; padding-top: 0;}
+    .static-card__custom--remove-background--mobile .truist-global-staticcard-column {background: none; border: none;}
+}
+
+/*add custom content*/
+.static-card__custom--add-custom-content .truist-global-staticcard-button-bottom {margin-top: 0; height: 100%;}
+.static-card__custom--add-custom-content .truist-global-staticcard-card-cta-button {margin-top: 0; height: 100%;}
+.static-card__custom--add-custom-content .truist-global-staticcard-card-cta-button > div {height: 100%;}
+.static-card__custom--add-custom-content .truist-global-staticcard-card-cta-button > div > div.aem-Grid {height: 100%; display: flex; flex-direction: column;}
+.static-card__custom--add-custom-content .truist-global-staticcard-card-cta-button > div > div.aem-Grid > .text,
+.static-card__custom--add-custom-content .truist-global-staticcard-card-cta-button > div > div.aem-Grid > .gridlayoutcontainer:first-child {flex: 1;}
+
+/*add padding*/
+.static-card__custom--add-padding .truist-global-staticcard-content-padding,
+.static-card__custom--add-padding .truist-global-staticcard-content-padding ~ p {padding-left: 4.167%; padding-right: 4.167%;}
+.static-card__custom--add-padding .truist-global-staticcard-content-padding ~ ul,
+.static-card__custom--add-padding .truist-global-staticcard-content-padding ~ ol {margin: 0 4.167% 2rem 4.167%;}
+.static-card__custom--add-padding .truist-global-staticcard-column {padding-top: 6rem; padding-bottom: 4rem;}
+@media (max-width: 1023px){
+    .static-card__custom--add-padding .truist-global-staticcard-content-padding,
+    .static-card__custom--add-padding .truist-global-staticcard-content-padding ~ p {padding-left: 8.333%; padding-right: 8.333%;}
+    .static-card__custom--add-padding .truist-global-staticcard-content-padding ~ ul,
+    .static-card__custom--add-padding .truist-global-staticcard-content-padding ~ ol {margin: 0 8.333% 2rem 8.333%;}
+}   
+
+/*box shadow*/
+.static-card__custom--box-shadow .truist-global-staticcard-column {border: 1px solid #2E1A474D; box-shadow: 0 0 0 2px rgb(0 0 0 / 5%); padding-bottom: 2rem;}
+.static-card__custom--box-shadow .truist-global-staticcard-column-transparent {border: none;}
+
+/*box shadow offset*/
+.static-card__custom--box-shadow-offset .truist-global-staticcard-column {border: 1px solid #2E1A474D; box-shadow: 0 4px 5px 2px rgb(0 0 0 / 10%); padding-bottom: 2rem;}
+.static-card__custom--box-shadow-offset .truist-global-staticcard-column-transparent {border: none;}
+
+/*background*/
+.static-card__custom--bg-color--dawn-lighter .truist-global-staticcard-column {background: #F6F3F9; border: none;}
+.static-card__custom--bg-color--midnight-purple .truist-global-staticcard-column {background: #2E1A47; border: none;}
+.static-card__custom--bg-color--midnight-purple {color: #fff;}
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-column,
+.static-card__custom--bg-color--dawn-lighter--header .truist-global-staticcard-column {padding-top: 0;}
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-row:nth-child(2),
+.static-card__custom--bg-color--dawn-lighter--header .truist-global-staticcard-row:nth-child(2) {margin-bottom: 0;}
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-row:nth-child(2),
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-row:nth-child(3) {background: #2E1A47;}
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-row:nth-child(2) {margin-bottom: -1px; padding-bottom: 1px;}
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-eyebrow {color: #fff; text-align: center; padding-top: 3rem;}
+.static-card__custom--bg-color--midnight-purple--header .truist-global-staticcard-cardtitle {color: #fff; text-align: center; padding-bottom: 3rem;}
+.static-card__custom--bg-color--dawn-lighter--header .truist-global-staticcard-row:nth-child(2),
+.static-card__custom--bg-color--dawn-lighter--header .truist-global-staticcard-row:nth-child(3) {background: #F6F3F9;}
+.static-card__custom--bg-color--dawn-lighter--header .truist-global-staticcard-eyebrow {color: #2E1A47; text-align: center; padding-top: 3rem;}
+.static-card__custom--bg-color--dawn-lighter--header .truist-global-staticcard-cardtitle {color: #2E1A47; text-align: center; padding-bottom: 3rem;}
+
+/*icons*/
+.static-card__custom--image-icon .truist-global-staticcard-img-top {width: auto; height: 6.5rem; display: inline-flex; align-items: center; justify-content: center;}
+.static-card__custom--image-icon .truist-global-staticcard-img {width: 6.5rem; height: auto; max-height: 6.5rem;}
+
+/*title options*/
+.static-card__custom--title--smaller .truist-global-staticcard-cardtitle {font-size: 2rem; line-height: 1.2em;}
+.static-card__custom--title--smallest .truist-global-staticcard-cardtitle {font-size: 1.8rem; line-height: 2.2rem;}
+.static-card__custom--title--larger .truist-global-staticcard-cardtitle {font-size: 2.4rem; line-height: 2.4rem; font-weight: 300;}
+.static-card__custom--title--margin-none .truist-global-staticcard-cardtitle {margin-bottom: -2rem;}
+@media (min-width: 769px){
+    .static-card__custom--title--larger .truist-global-staticcard-cardtitle {font-size: 2.8rem; line-height: 3.4rem;}
+}
+
+/*wealth*/
+@media (min-width: 769px){
+    .static-card__custom--wealth {margin-top: 4rem; margin-bottom: 4rem;}
+    .static-card__custom--wealth > div.aem-Grid > div.staticcard:first-child {transform: scale(1.1); padding-right: 5.267%}
+}
+@media (max-width: 767px) {
+.truist-global-staticcard-column {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    align-items: inherit;
+    justify-content: inherit;
+    text-align: inherit;
+}
+.truist-global-staticcard-column-centered {
+    text-align: center;
+}
+}
+
+.truist-global-staticcard-cardtitle {margin-bottom: 0;}
+.truist-global-staticcard-cardcontent {line-height: 1.5em;}

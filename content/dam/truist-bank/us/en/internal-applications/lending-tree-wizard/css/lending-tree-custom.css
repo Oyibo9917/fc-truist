@@ -1,0 +1,1012 @@
+/* Force a vertical sroll on page to prevent page jump on results, when page height is greater than the fold */
+
+.lending-tree-body {
+ /* overflow-y: scroll; */
+ scroll-behavior: smooth;
+ font-family: 'Truist Trio', 'Arial', sans-serif;
+}
+
+.lending-tree-body * {
+ outline: none !important;
+ letter-spacing: 0px;
+}
+
+.lending-tree-body.modal-open {
+ overflow: hidden;
+}
+
+.hide-for-large {
+ display: none;
+}
+
+.clearfix {
+ clear: both;
+}
+
+/* Override Bootstrap .container-fluid width property for accurate spacing */
+
+/* May need to adjust once component is set on the page */
+
+.lending-tree-body .container-fluid {
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 24px;
+ color: #ffffff;
+ width: 100%;
+ padding: 20px 0;
+}
+
+.lending-tree-body form {
+ display: block;
+ width: 100%;
+ max-width: 1328px;
+ margin: 0 auto;
+ position: relative;
+ background: #2E1A47;
+ border-radius: 10px;
+}
+
+.lending-tree-body fieldset {
+ display: block;
+ width: 100%;
+ background: #2E1A47;
+ border-radius: 10px;
+ padding: 80px;
+ position: absolute;
+ visibility: hidden;
+ opacity: 0;
+ z-index: -1;
+ top: 0;
+ backface-visibility: hidden;
+ -webkit-backface-visibility: hidden;
+ transition: all .3s ease-in-out;
+}
+
+/* Show the active panel */
+
+/* This combined with the JS helps smooth the the transitions between the panel change */
+
+.lending-tree-body fieldset.active {
+ position: relative;
+ visibility: visible;
+ z-index: 1;
+ opacity: 1;
+ backface-visibility: hidden;
+ -webkit-backface-visibility: hidden;
+}
+
+.lending-tree-body select {
+ width: 33% !important;
+ display: block !important;
+ font-size: 18px !important;
+ padding-left: 15px;
+}
+
+.lending-tree-body label {
+ color: #ffffff;
+ font-weight: 600;
+ font-size: 20px;
+ line-height: 26px;
+}
+
+.lending-tree-body select.custom-select {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ -ms-appearance: none;
+ appearance: none;
+ margin-bottom: 80px;
+}
+
+.lending-tree-body select.custom-select:focus {
+ border-color: #B0E0E2 !important;
+ box-shadow: 0 0 0 0.2rem rgba(176, 224, 226, .75) !important;
+}
+
+.lending-tree-body select, 
+label[for="loanTypes"], 
+label[for="state"] {
+ color: #515151;
+ font-size: 18px;
+ line-height: normal;
+}
+
+.lending-tree-body label[for="loanTypes"], 
+.lending-tree-body label[for="state"] {
+ font-weight: 400;
+ position: absolute;
+ top: 9px;
+ left: 17px;
+ transition: all .3s ease-in-out;
+}
+
+/* Custom radios */
+
+/* Don't hide the DOM radio, simply position it over the label's ::before & ::after psuedos. 
+Then lower the opacity to "0". By doing it this way we can ensure the radio gets the
+:focus and the :checked states */
+
+.lending-tree-body label.radio {
+ position: relative;
+ padding-left: 50px;
+}
+
+.lending-tree-body label.radio>.custom-radio {
+ opacity: 0;
+ width: 34px;
+ height: 34px;
+ position: absolute;
+ left: 0;
+ top: 0;
+ z-index: 1;
+ cursor: pointer;
+}
+
+.lending-tree-body label.radio::before {
+ content: '';
+ display: block;
+ width: 34px;
+ height: 34px;
+ border: 2px solid #ffffff;
+ border-radius: 50%;
+ position: absolute;
+ left: 0;
+ top: -5px;
+ z-index: -1;
+}
+
+.lending-tree-body label.radio::after {
+ content: '';
+ display: block;
+ width: 18px;
+ height: 18px;
+ border-radius: 50%;
+ background: #ffffff;
+ position: absolute;
+ left: 8px;
+ top: 3px;
+ opacity: 0;
+ z-index: -1;
+}
+
+/* Label focus state for a11y */
+
+.lending-tree-body label.radio.focus::before {
+ content: '';
+ border: 2px solid #AFABC9;
+}
+
+.lending-tree-body label.radio.focus::after {
+ content: '';
+ background: #AFABC9;
+ opacity: 1;
+}
+
+.lending-tree-body label.radio::before {
+ content: '';
+ border: 2px solid #ffffff;
+}
+
+.lending-tree-body label.radio.checked::after {
+ content: '';
+ opacity: 1;
+ background: #ffffff;
+}
+
+/* label animation for selectbox animateLabel() function in js */
+
+.field {
+ position: relative;
+}
+
+.field.filled label {
+ top: -3px;
+ font-size: 12px;
+}
+
+.lending-tree-body h2 {
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 24px;
+ color: #B0E0E2;
+ margin: 0 0 20px 0;
+ text-transform: uppercase;
+}
+
+.lending-tree-body h3 {
+ font-weight: 300;
+ font-size: 48px;
+ line-height: 54px;
+ color: #ffffff;
+ margin: 0 0 40px 0;
+}
+
+.lending-tree-body h3 span {
+ display: block;
+ font-size: 36px;
+ line-height: 42px;
+ margin-top: 20px;
+}
+
+.loan-types h3, 
+.state-selection h3, 
+.funds-access h3, 
+.borrow-amount h3, 
+.home-collateral h3 {
+ margin-bottom: 40px;
+}
+
+.results {
+ padding-bottom: 50px;
+}
+
+.lending-tree-body p {
+ color: #ffffff;
+ font-size: 18px;
+ line-height: 24px;
+ margin-bottom: 40px;
+}
+
+.start p {
+ max-width: 786px;
+}
+
+/* "Next button */
+
+.lending-tree-body .fill {
+ float: right;
+}
+
+.lending-tree-body .reset {
+ margin-bottom: 40px !important;
+}
+
+.lending-tree-body button {
+ width: auto;
+ border-radius: 4px;
+ font-weight: 400;
+ outline: none;
+ box-shadow: 0 0 0 2px #ffffff;
+ border: 1px solid transparent;
+ font-size: 18px;
+ line-height: 24px;
+ padding: 15px 20px;
+ white-space: nowrap !important;
+ max-height: 66px;
+ text-align: center;
+ transition: all .3s ease-in-out;
+}
+
+.lending-tree-body a.button-link {
+ width: auto;
+ border-radius: 4px;
+ font-weight: 400;
+ outline: none;
+ box-shadow: 0 0 0 2px #ffffff;
+ border: 1px solid transparent;
+ font-size: 18px;
+ line-height: 24px;
+ padding: 15px 20px;
+ white-space: nowrap !important;
+ max-height: 66px;
+ text-align: center;
+ text-decoration: none;
+ transition: all .3s ease-in-out;
+}
+
+.lending-tree-body button:hover {
+ color: #2E1A47 !important;
+ background: #ffffff !important;
+ border: 1px solid #ffffff !important;
+ box-shadow: 0 0 0 2px #ffffff !important;
+}
+
+.lending-tree-body button.next:hover {
+ color: #2E1A47 !important;
+ background: #b0e0e2 !important;
+ border: 1px solid #b0e0e2 !important;
+ box-shadow: 0 0 0 2px #b0e0e2 !important;
+}
+
+.lending-tree-body button:focus, 
+.lending-tree-body button.next:focus {
+ background: #b0e0e2 !important;
+ color: #2E1A47 !important;
+ border: 1px solid #2E1A47 !important;
+ box-shadow: 0 0 0 2px #b0e0e2 !important;
+}
+
+.lending-tree-body button:disabled, 
+.lending-tree-body button:disabled:hover {
+ border: 1px solid transparent !important;
+ color: #ffffff !important;
+ background: rgba(201, 201, 201, 0.6) !important;
+ box-shadow: 0 0 0 2px rgba(201, 201, 201, 0.6) !important;
+}
+
+/* Trasparent buttons - "Get started" , "Go back" & "Apply now" */
+
+.lending-tree-body .ghost {
+ color: #ffffff;
+ background: transparent;
+}
+
+.lending-tree-body .apparition {
+ color: #2E1A47 !important;
+ background: transparent !important;
+ border: 1px solid transparent !important;
+ box-shadow: 0 0 0 2px #2E1A47 !important;
+ display: block;
+ min-width: 100%;
+ margin: 0 !important;
+ position: relative;
+}
+
+.lending-tree-body .apparition::before {
+ content: '';
+ position: absolute;
+ border: 1px solid transparent !important;
+ background: transparent !important;
+ width: 100%;
+ height: 100%;
+ border-radius: 4px;
+ top: 0;
+ left: 0;
+}
+
+.lending-tree-body .apparition:hover {
+ color: #ffffff !important;
+ background: #2e1a47 !important;
+ border: 1px solid #2E1A47!important;
+ box-shadow: 0 0 0 2px #2E1A47 !important;
+}
+
+.lending-tree-body .apparition:focus {
+ color: #2e1a47 !important;
+ background: transparent !important;
+ border: 1px solid transparent !important;
+ box-shadow: 0 0 0 2px #2e1a47 !important;
+}
+
+.lending-tree-body .apparition:focus::before {
+ border: 1px solid #2e1a47 !important;
+}
+
+/* Dark card button */
+
+.lending-tree-body button.midnight, 
+.lending-tree-body a.midnight:link, 
+.lending-tree-body a.midnight:visited {
+ text-decoration: none;
+ color: #ffffff !important;
+ background: #2E1A47 !important;
+ border: 1px solid #2E1A47 !important;
+ box-shadow: 0 0 0 2px #2E1A47 !important;
+ display: block;
+ margin: 0 0 15px 0 !important;
+ min-width: 100%;
+}
+
+.lending-tree-body button.midnight:hover, 
+.lending-tree-body a.midnight:hover, 
+.lending-tree-body a.midnight:hover:active {
+ color: #2e1a47 !important;
+ background: #ffffff !important;
+ border: 1px solid #ffffff !important;
+ box-shadow: 0 0 0 2px #2E1A47 !important;
+}
+
+.lending-tree-body .midnight:focus {
+ color: #ffffff !important;
+ background: #2E1A47 !important;
+ border: 1px solid #ffffff !important;
+ box-shadow: 0 0 0 2px #2E1A47 !important;
+}
+
+.lending-tree-body ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+ul.ul-radios {
+ margin-bottom: 60px;
+}
+
+.lending-tree-body ul li {
+ width: 49.77%;
+ display: inline-block;
+ margin-bottom: 20px;
+}
+
+span.pusher {
+ margin-right: 20px;
+}
+
+/* Hide all cardsin the "Results panel */
+
+/* User selections will determine which panels to show vs. hide
+ This function is performed on the "Next" click (JS)
+ Hide the disclosures */
+
+.loan, .disclosure-container {
+ display: none;
+}
+
+.results p {
+ margin-bottom: 0;
+}
+
+/* Product Cards */
+
+.lending-tree-body .loan-card {
+ background: #ffffff;
+ min-width: 345px;
+ max-width: 402px;
+ height: 785px;
+ margin: 0 auto;
+ border: 1px solid #AFABC9;
+ border-radius: 20px;
+ overflow: hidden;
+}
+
+.lending-tree-body .card-title {
+ background: rgba(175, 171, 201, 0.4);
+ min-height: 60px;
+ padding: 20px;
+ margin-bottom: 0;
+ color: #2E1A47 !important;
+ font-weight: 400;
+ /* font-weight: bold; */
+ font-size: 18px;
+ line-height: 24px;
+}
+
+.lending-tree-body .card-title h3 {
+ font-weight: 600;
+ font-size: 28px;
+ line-height: 34px;
+ color: #2E1A47 !important;
+ margin: 0 0 5px 0;
+}
+
+.lending-tree-body .card-body {
+ padding: 20px;
+}
+
+.lending-tree-body .card-body p {
+ color: #515151 !important;
+ margin-bottom: 20px;
+}
+
+.lending-tree-body .card-body p.labels {
+ margin-bottom: 0px;
+}
+
+.sub {
+ color: #515151;
+ text-align: center;
+ display: block;
+ margin-bottom: 20px;
+ line-height: 16px;
+}
+
+.sub sup {
+ color: #E61F00;
+}
+
+ul.checkpoint {
+ color: #515151 !important;
+}
+
+.lending-tree-body .card-body span.loan-range {
+ display: block;
+ font-weight: 400;
+ font-size: 24px;
+ line-height: 30px;
+ color: #2E1A47;
+ font-weight: bold;
+ margin-bottom: 10px;
+}
+
+.lending-tree-body .card-body sup a:link, 
+.lending-tree-body .card-body sup a:visited, 
+.lending-tree-body .modal-dialog sup a:link, 
+.lending-tree-body .modal-dialog sup a:visited {
+ font-size: 16px;
+ line-height: 22px;
+ font-weight: normal;
+ color: #2E1A47;
+ text-decoration: underline;
+ transition: all .3s ease-in-out;
+}
+
+.lending-tree-body .card-body sup a:hover, 
+.lending-tree-body .card-body sup a:active, 
+.lending-tree-body .card-body sup a:focus, 
+.lending-tree-body .modal-dialog sup a:hover, 
+.lending-tree-body .modal-dialog sup a:active, 
+.lending-tree-body .modal-dialog sup a:focus {
+ text-decoration: none;
+}
+
+ul.checkpoint {
+ margin: 20px 0 0 0;
+ padding: 0;
+ list-style: none;
+}
+
+ul.checkpoint li {
+ margin: 0 0 10px 0;
+ font-size: 18px;
+ line-height: 24px;
+ width: 100%;
+ position: relative;
+}
+
+ul.checkpoint li svg {
+ margin: -5px 5px 0 0;
+}
+
+.loan-card .card-footer {
+ padding: 0 20px 20px 20px;
+ border-top: none;
+ background: #ffffff;
+}
+
+/* Discloure styes */
+
+.lending-tree-body .disclosure-container,
+.statement {
+ padding: 40px 0 0 0;
+}
+
+.statement {
+ text-align: center;
+}
+
+.lending-tree-body .disclosure-container .card-body p.disclosure {
+ color: #ffffff !important;
+ border: 1px dashed transparent;
+ padding: 10px;
+ font-size: 16px;
+ line-height: 22px;
+ transition: all .3s ease-in-out;
+ margin-bottom: 0;
+}
+
+.lending-tree-body .modal-dialog .card-body p.disclosure {
+ color: #515151 !important;
+ border: 1px dashed transparent;
+ padding: 10px;
+ font-size: 16px;
+ line-height: 22px;
+ transition: all .3s ease-in-out;
+ margin-top: 40px;
+ margin-bottom: 0;
+}
+
+/* adding focus class for page scroll to disclosures */
+
+.lending-tree-body .disclosure-container .card-body p.data-focus {
+ border: 1px dashed #B0E0E2;
+ color: #B0E0E2 !important;
+}
+
+.lending-tree-body .modal-dialog .card-body p.data-focus {
+ border: 1px dashed #7C6992;
+ color: #7C6992 !important;
+}
+
+.lending-tree-body .disclosure-container .card-body p sup, 
+.lending-tree-body .disclosure-container .card-body p.data-focus sup {
+ color: #AFABC9 !important;
+}
+
+.lending-tree-body .modal-dialog .card-body p sup, 
+.lending-tree-body .modal-dialog .card-body p.data-focus sup {
+ color: #7C6992 !important;
+}
+
+.lending-tree-body .disclosure-container a {
+ color: #ffffff;
+ text-decoration: none;
+}
+
+.lending-tree-body .disclosure-container a:hover, 
+.lending-tree-body .disclosure-container a:focus {
+ color: #AFABC9;
+}
+
+.lending-tree-body .disclosure-container a svg {
+ margin: 5px 0 0 5px;
+ transition: all .3s ease-in-out;
+}
+
+.lending-tree-body .disclosure-container a svg path {
+ fill: #ffffff;
+ transform: scale(.75);
+}
+
+.lending-tree-body .disclosure-container a:hover svg path, 
+.lending-tree-body .disclosure-container a:focus svg path {
+ fill: #AFABC9;
+}
+
+.lending-tree-body .disclosure-container a[aria-expanded="true"] {
+ color: #ffffff;
+}
+
+.lending-tree-body .disclosure-container a[aria-expanded="true"]:hover, 
+.lending-tree-body .disclosure-container a[aria-expanded="true"]:focus {
+ color: #AFABC9;
+}
+
+.lending-tree-body .disclosure-container a[aria-expanded="true"] svg {
+ transform: rotate(180deg);
+ margin: -5px 0 0 5px;
+}
+
+.lending-tree-body .disclosure-container a[aria-expanded="true"] svg path {
+ fill: #ffffff;
+}
+
+.lending-tree-body .disclosure-container a[aria-expanded="true"]:hover svg path, 
+.lending-tree-body .disclosure-container a[aria-expanded="true"]:focus svg path {
+ fill: #AFABC9;
+}
+
+.lending-tree-body #disclosure {
+ width: 100%;
+ background: none;
+ border: 2px solid #ffffff;
+ border-radius: 10px;
+ margin-top: 20px;
+}
+
+.lending-tree-body #disclosure .card.card-body {
+ display: block !important;
+ width: 100%;
+ min-width: 100%;
+ max-width: 100%;
+ background: none;
+ border: none;
+ padding: 20px;
+}
+
+/*Quick view modal styles (overrride BS) */
+
+.lending-tree-body .modal {
+ overflow: hidden;
+}
+
+.lending-tree-body .modal-content.card {
+ min-width: 100%;
+ max-width: 100%;
+}
+
+.lending-tree-body .modal-header {
+ display: block;
+ position: relative;
+ padding: 20px 80px;
+}
+
+.lending-tree-body .modal-header button {
+ color: #2E1A47;
+ opacity: 1;
+ position: absolute;
+ top: 10px;
+ right: 20px;
+ border: none !important;
+ padding: 0 !important;
+ margin: 0 !important;
+ transition: all .3s ease-out;
+}
+
+.lending-tree-body .modal-header button:hover, 
+.lending-tree-body .modal-header button:focus {
+ background: transparent !important;
+ color: #7C6992 !important;
+ border: none !important;
+ padding: 0 !important;
+ margin: 0 !important;
+ transform: scale(1.25)
+}
+
+.lending-tree-body .modal-header button span {
+ font-size: 48px;
+ line-height: 54px;
+}
+
+.lending-tree-body .modal-body {
+ padding: 20px 80px 40px 80px;
+}
+
+.lending-tree-body .modal-body h4 {
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 24px;
+ color: #7C6992
+}
+
+.lending-tree-body .modal-body h5 {
+ font-weight: 400;
+ font-size: 24px;
+ line-height: 30px;
+ color: #7C6992
+}
+
+.lending-tree-body .modal-body h5.benefits {
+ font-weight: 400;
+ font-size: 24px;
+ line-height: 30px;
+ color: #515151
+}
+
+.lending-tree-body .modal-body .checkpoint {
+ margin: 40px 0 0 0;
+ padding: 0 20px;
+}
+
+.modal-body .checkpoint li {
+ margin-bottom: 20px;
+ vertical-align: top;
+ width: 49.75%;
+ display: inline-block;
+ padding: 0 30px;
+}
+
+.modal-body .checkpoint li svg {
+ display: block;
+ float: left;
+ margin: 7px 15px 0 0;
+}
+
+.modal-body .checkpoint li span {
+ display: block;
+ overflow: hidden;
+}
+
+.modal-cta {
+ float: right;
+}
+
+.modal-cta:link, .modal-cta:visited {
+ color: #2E1A47;
+ text-decoration: underline;
+}
+
+.modal-cta:hover, 
+.modal-cta:active, 
+.modal-cta:focus {
+ color: #7C6992;
+ text-decoration: none;
+}
+
+.lending-tree-body .close, 
+.lending-tree-body .close:hover, 
+.lending-tree-body .close:focus {
+ border: none !important;
+ outline: none !important;
+ box-shadow: none !important;
+}
+
+/* Media Queries */
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+ .hide-for-large {
+  display: block;
+ }
+ .lending-tree-body fieldset {
+  display: block;
+  width: 100%;
+  background: #2E1A47;
+  padding: 80px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: all .3s ease-in-out;
+ }
+ .lending-tree-body fieldset {
+  padding: 60px 20px;
+  border-radius: 0px;
+ }
+ .lending-tree-body h3 {
+  font-size: 28px;
+  line-height: 34px;
+ }
+ .lending-tree-body p, 
+ .lending-tree-body h2, 
+ .lending-tree-body label, 
+ ul.checkpoint li {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ label.radio::before {
+  top: -5px;
+ }
+ label.radio::after {
+  top: 3px;
+ }
+ .lending-tree-body select {
+  width: 100% !important;
+  font-size: 16px !important;
+ }
+ .lending-tree-body ul li {
+  width: 100% !important;
+ }
+ .lending-tree-body button {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body .card {
+  margin: 0 auto 30px auto;
+ }
+ .lending-tree-body .card-title {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body .card-title h3 {
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 0;
+ }
+ .lending-tree-body .card-body span.loan-range {
+  font-size: 20px;
+  line-height: 31px;
+ }
+ .lending-tree-body .disclosure-container {
+  padding: 0 20px 20px 20px;
+ }
+ .lending-tree-body .disclosure-container a {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body .disclosure-container p {
+  margin-bottom: 0px
+ }
+ .lending-tree-body .modal-header {
+  display: block;
+  position: relative;
+  padding: 20px;
+ }
+ .lending-tree-body .modal-body {
+  padding: 20px;
+ }
+ .lending-tree-body .modal-body .checkpoint {
+  width: 100%;
+  padding: 0;
+ }
+ .lending-tree-body .modal-body .checkpoint li {
+  width: 100%;
+  padding: 0;
+ }
+ .lending-tree-body .reset {
+  margin-top: 20px !important;
+  margin-left: 0 !important;
+ }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+ .hide-for-large {
+  display: block;
+ }
+ .lending-tree-body fieldset {
+  padding: 60px 20px;
+  border-radius: 0px;
+ }
+ .lending-tree-body h3 {
+  font-size: 28px;
+  line-height: 34px;
+ }
+ .lending-tree-body p, 
+ .lending-tree-body h2, 
+ .lending-tree-body label,
+  ul.checkpoint li {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body label.radio::before {
+  top: -5px;
+ }
+ .lending-tree-body label.radio::after {
+  top: 3px;
+ }
+ .lending-tree-body select {
+  width: 100% !important;
+  font-size: 16px !important;
+ }
+ .lending-tree-body ul li {
+  width: 100%;
+ }
+ .lending-tree-body button {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body .card {
+  margin: 0 auto 30px auto;
+ }
+ .lending-tree-body .card-title {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body .card-title h3 {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 0;
+ }
+ .lending-tree-body .card-body span.loan-range {
+  font-size: 20px;
+  line-height: 26px;
+ }
+ .lending-tree-body .disclosure-container {
+  padding: 0 20px 20px 20px;
+ }
+ .lending-tree-body .disclosure-container a {
+  font-size: 16px;
+  line-height: 22px;
+ }
+ .lending-tree-body .disclosure-container p {
+  margin-bottom: 0px
+ }
+ .lending-tree-body .modal-header {
+  display: block;
+  position: relative;
+  padding: 20px;
+ }
+ .lending-tree-body .modal-body {
+  padding: 20px;
+ }
+ .lending-tree-body .modal-body .checkpoint {
+  width: 100%;
+  padding: 0;
+ }
+ .lending-tree-body .modal-body .checkpoint li {
+  width: 100%;
+  padding: 0;
+ }
+ .lending-tree-body .reset {
+  margin-top: 20px !important;
+  margin-left: 0 !important;
+ }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+ .hide-for-large {
+  display: block;
+ }
+ .lending-tree-body select {
+  width: 100% !important;
+ }
+ .lending-tree-body ul li {
+  width: 100%;
+ }
+ .lending-tree-body .card {
+  margin: 0 auto 20px auto;
+ }
+ .lending-tree-body .modal-header {
+  display: block;
+  position: relative;
+  padding: 20px;
+ }
+ .lending-tree-body .modal-body {
+  padding: 20px;
+ }
+ .lending-tree-body .modal-body .checkpoint {
+  width: 100%;
+  padding: 0;
+ }
+ .lending-tree-body .modal-body .checkpoint li {
+  width: 100%;
+  padding: 0;
+ }
+}

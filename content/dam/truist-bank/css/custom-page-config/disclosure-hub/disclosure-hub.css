@@ -1,0 +1,35 @@
+/*DISCLOSURE HUB TABLE*/
+.table-disclosures {border-collapse: collapse; width: auto; color: #424242; line-height: 1.5;}
+.table-disclosures th,
+.table-disclosures td {border: 1px solid #2E1A47; padding: 2rem ; vertical-align: top; text-align: left; font-size: 1.5rem;}
+.table-disclosures.table th,
+.table-disclosures.table td {padding: 2rem;}
+.table-disclosures th {background: #f7f7f7; font-weight: bold; font-size: 1.5rem; width: 33%;}
+.table-disclosures th[colspan="2"] {background: #160C23; color: #fff; font-weight: bold; padding: 1rem 2rem; font-size: 1.6rem;}
+.table-disclosures td span {font-size: 2.2rem; font-weight: bold;}
+@media (max-width: 768px) {
+    /*tab panel table*/
+    .truist-tabs .table-disclosures {margin-left: -2rem; margin-right: -2rem; width: auto;}
+}
+@media (min-width: 769px) {
+    .table-disclosures th,
+    .table-disclosures td {font-size: 1.6rem;}
+    .table-disclosures th {font-size: 1.8rem;}
+    .table-disclosures th[colspan="2"] {font-size: 2rem;}
+    .table-disclosures td span {font-size: 2.8rem;}
+}
+
+/*credit card product only*/
+.table-credit-card {font-family: Arial, Helvetica, sans-serif;}
+
+/*unordered list - alt*/
+.truist-tabs .ori-tabs__panel ol {list-style: none; padding-left: 4rem; position: relative;}
+.truist-tabs .ori-tabs__panel ol li {padding-bottom: 2rem;}
+.truist-tabs .ori-tabs__panel ol li:first-child {padding-top: 2rem;}
+.truist-tabs .ori-tabs__panel ol li:last-child {padding-bottom: 0;}
+.truist-tabs .ori-tabs__panel ol li:before {counter-increment: mycounter; content: counter(mycounter)"."; position: absolute; left: 0;}
+.truist-tabs .ori-tabs__panel ol:first-of-type {counter-reset: mycounter;}
+.truist-tabs .ori-tabs__panel ol ol {list-style-type: lower-alpha; padding-left: 2rem;}
+.truist-tabs .ori-tabs__panel ol ol li {padding-left: 2rem;}
+.truist-tabs .ori-tabs__panel ol ol li:before {display: none;}
+.truist-tabs .ori-tabs__panel ol ol.special {list-style-type: none; padding-left: 8rem;}

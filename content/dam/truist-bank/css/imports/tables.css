@@ -1,0 +1,107 @@
+
+/*********************************/
+/*TABLES*/
+.table {width:100%; margin-bottom: 1rem; color:#2E1A47;}
+.table th,
+.table td {padding: .75rem; vertical-align:top; border-top: 1px solid #c9c9c9;}
+.table thead th {vertical-align: bottom; border-bottom: 2px solid #c9c9c9;}
+.table tbody+tbody {border-top: 2px solid #c9c9c9;}
+
+/*scrollbar*/
+.table::-webkit-scrollbar {width: 1.2rem; height: 1.2rem;}
+.table::-webkit-scrollbar-track {background: #C9C9C9; border-radius: 1rem;}
+.table::-webkit-scrollbar-thumb {background: #2E1A47; border-radius: 1rem;}
+.table::-webkit-scrollbar-thumb:hover {background: #2E1A47;}
+
+/*bordered*/
+.table-bordered {border:1px solid #c9c9c9;}
+.table-bordered th,.table-bordered td{border:1px solid #c9c9c9;}
+.table-bordered thead th,.table-bordered thead td{border-bottom-width:2px}
+
+/*borderless*/
+.table-borderless th,.table-borderless td,.table-borderless thead th,.table-borderless tbody+tbody {border:0}
+
+/*striped*/
+.table-striped tbody tr:nth-of-type(even) {background-color: #f7f7f7;}
+.table-striped tbody tr:nth-of-type(odd) {background-color: #fff;}
+
+/*primary*/
+.table-primary {border-radius: 1rem;}
+.table-primary,
+.table-primary > th,
+.table-primary > td {background: transparent;}
+.table-primary thead th,
+.table-primary td {padding: 1.5rem; vertical-align: top; min-width: 20rem;}
+.table-primary thead, 
+.table-primary thead th, 
+.table-primary thead tr {background-color: #7c6992;}
+.table-primary tr th {color: #fff; font-size: 1.6rem; line-height: 1.5; font-weight: 600;}
+.table-primary tr th a,
+.table-primary tr th a:focus,
+.table-primary tr th a:hover {color:#fff;}
+.table-primary tr th:first-child {border-top-left-radius: 1rem;}
+.table-primary tr th:last-child {border-top-right-radius: 1rem;}
+.table-primary td {color: #2E1A47; font-size: 1.6rem; line-height: 1.5;}
+.table-primary td:first-child {font-size: 1.8rem; line-height: 1.5; font-weight: 800;}
+.table-primary th,.table-primary td,.table-primary thead th,.table-primary tbody+tbody {border:0;}
+@media (min-width: 769px){
+    /*primary*/
+    .table-primary thead th,
+    .table-primary td {padding: 2rem;}
+    .table-primary tr th {font-size: 2rem; line-height: 1.5;}
+    .table-primary td {font-size: 1.8rem; line-height: 1.5;}
+    .table-primary td:first-child {font-size: 2rem; line-height: 1.5;}
+    .table-primary thead th:first-child,
+    .table-primary td:first-child {padding-left: 4.167%;}
+    .table-primary thead th:last-child,
+    .table-primary td:last-child {padding-right: 4.167%;}
+}
+/*primary - style 1*/
+.table-primary.table-style-1 thead,
+.table-primary.table-style-1 thead th,
+.table-primary.table-style-1 thead tr {background: #2E1A47;}
+.table-primary.table-style-1::-webkit-scrollbar-thumb {background: #7c6992;}
+.table-primary.table-style-1::-webkit-scrollbar-thumb:hover {background: #7c6992;}
+
+
+
+/*RESPONSIVE*/
+@media(max-width:575.98px){
+    .table-responsive-sm{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .table-responsive-sm>.table-bordered{border:0}
+}
+@media(max-width:767.98px){
+    .table-responsive-md{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .table-responsive-md>.table-bordered{border:0}
+}
+@media(max-width:991.98px){
+    .table-responsive-lg{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .table-responsive-lg>.table-bordered{border:0}
+}
+@media(max-width:1199.98px){
+    .table-responsive-xl{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .table-responsive-xl>.table-bordered{border:0}
+}
+@media(max-width:1449.98px){
+    .table-responsive-xxl{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .table-responsive-xxl>.table-bordered{border:0}
+}
+.table-responsive{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-responsive>.table-bordered{border:0}
+
+
+
+/*PRODUCT COMPARISON TABLE*/
+.table-product-comparison {}
+.table-product-comparison thead th {font-weight: 400; border-bottom: 1px solid #C9C9C9; border-top: none;}
+.table-product-comparison th,
+.table-product-comparison td {text-align: left; vertical-align: top; padding: 3.5rem 3.5rem 3.5rem 0; color: #2E1A47; min-width: 20rem; border-bottom: 1px solid #C9C9C9; border-top: none;}
+.table-product-comparison td {font-size: 1.6rem; line-height: 1.5;}
+.table-product-comparison tr {padding: 4rem 0;}
+.table-product-comparison thead th {font-size: 2rem; line-height: 1.5;}
+.table-product-comparison p {margin-bottom: 1rem;}
+.table-product-comparison td:last-child {padding-right: 0;}
+.table-product-comparison td:first-child img {max-width: 15rem; width: 100%; margin-bottom: 2rem;}
+.table-product-comparison td:first-child p {font-size: 1.4rem;}
+.table-product-comparison td:first-child p:nth-of-type(1) {font-size: 1.8rem; font-weight: 600;}
+.table-product-comparison:after {content: ""; height: 1.2rem; width: 100%; display: block;}

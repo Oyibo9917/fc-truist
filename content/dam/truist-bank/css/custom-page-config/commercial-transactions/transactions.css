@@ -1,0 +1,140 @@
+﻿/*****//*****//*****//*****//*****/
+/*****//*****//*****//*****//*****/
+/*******TRANSACTIONS CSS**********/
+/*****//*****//*****//*****//*****/
+/*****//*****//*****//*****//*****/
+/*
+/*
+/*
+*/
+/*pagination fix*/
+.dll-transactions .pagination li span {
+    margin-right: 35px;
+}
+.dll-transactions .dll-pagination-container .pagination{
+	width: auto;
+}
+/*filter options*/
+.dll-transactions .dll-customer-option {border: none; padding: 0; margin-bottom: 7.5rem;}
+.dll-transactions .dll-filter-section {}
+.dll-transactions .dll-filter-dropdowns {position: relative; margin-bottom: 5rem;}
+.dll-transactions .dll-filter-dropdowns:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    font-size: 28px;
+    position: absolute;
+    top: 16.666%;
+    right: 2.2rem;
+    color: #707070;
+    pointer-events: none;
+}
+.dll-transactions .dll-filter-items {
+    /* remove default arrow*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    border-radius: 4px;
+    border: 1px solid #707070;
+    padding: 2rem 6rem 2rem 2rem;
+    height: auto; 
+    width: 100%; 
+    margin: 0; 
+    font-size: 1.8rem; 
+    color: #707070;}
+.dll-transactions .dll-filter-items::-ms-expand{ display: none;} /* remove default arrow for IE */
+.dll-transactions .apply-reset-button input {font-size: 2.4rem; padding: 1.55rem 3rem; margin: 0; border: 2px solid #2E1A47; background: transparent; color: #2E1A47; border-radius: 4px;}
+.dll-transactions .apply-reset-button input:hover,
+.dll-transactions .apply-reset-button input:focus {background: #2E1A47; color: #fff;}
+.dll-transactions .apply-reset-button input:nth-child(2) {display: none;}
+
+/*pagination*/
+.dll-transactions .dll-pagination-container {margin-top: 0 !important;}
+.dll-transactions .dll-pagination-container .pagination {display: flex; align-items: center; justify-content: center; font-size: 1em; margin: 2.5rem auto; max-width: 45rem;}
+.dll-transactions .pagination li {flex: 1;}
+.dll-transactions .pagination li:first-child,
+.dll-transactions .pagination li:last-child {display: none;}
+.dll-transactions .pagination li.active span.current,
+.dll-transactions .pagination li span,
+.dll-transactions .pagination li a {padding: .5rem; position: relative; display: inline-block; border: 0; text-decoration: none; font-size: 1em; line-height: 1em;}
+.dll-transactions .pagination li a:hover,
+.dll-transactions .pagination li a:focus {color: #2E1A47;}
+.dll-transactions .pagination li.active span.current::after,
+.dll-transactions .pagination li a:hover::after,
+.dll-transactions .pagination li a:focus::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #2e1a47;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/**tombstone cards**/
+.dll-transactions .tombstone-container {position: relative; margin: 0 0 7.5rem 0 !important; width: 100% !important; padding: 5rem 8.333% 7.5rem; background: transparent; border: 2px solid #F0F0F0;}
+.dll-transactions .tombstone-card-title {position: absolute; top: 0; font-weight: 400; color: #7C6992; font-size: 2rem; margin: 0 -8.333%; text-align: center; width: 100%;}
+.dll-transactions .tombstone-photo {height: 10rem; display: flex; align-items: center; justify-content: center;}
+.dll-transactions .tombstone-desc {padding: 0; min-height: auto;}
+.dll-transactions .tombstone-photo img {width: auto; height: 100%;}
+.dll-transactions .tombstone-card-description {margin: 2.5rem 4.167%; text-align: center; font-size: 1.8rem;}
+.dll-transactions .tombstone-list-item {margin: 2.5rem 4.167%; text-align: center; padding-left: 0; color: #7C6992; font-size: 2rem; list-style: none;}
+.dll-transactions .published-date {margin: 5rem 4.167% 0; padding: 0; text-align: center; position: static; font-size: 1.8rem;}
+
+/**error message**/
+.dll-transactions .dll-noresults-message {color: #707070; font-size: 1.8rem; text-align: left;}
+
+/*tablet*/
+@media (min-width: 768px){
+    /*filter options*/
+    .dll-transactions .dll-filter-section {float: none; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+    .dll-transactions .dll-filter-dropdowns {margin-right: 4.467%; flex: 1;}
+    .dll-transactions .dll-filter-dropdowns:nth-child(2) {margin-right: 0;}
+    .dll-transactions .apply-reset-button {width: 100%;}
+    /*pagination*/
+    .dll-transactions .dll-pagination-container .pagination {margin: 5rem auto;}
+    /*tombstone cards*/
+    .dll-transactions .tombstone-container {width: 46% !important; margin: 7.5rem 1rem !important; padding: 10rem 8.333%; border: 2px solid #F0F0F0;}
+    .dll-transactions .tombstone-card-title {top: 5rem; left: 0; margin: 0; font-size: 2rem;}
+    .dll-transactions .tombstone-desc {display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    .dll-transactions .tombstone-card-description {flex: 1 1 auto; width: 100%; min-height: 16rem;}
+    .dll-transactions .tombstone-list-item {font-size: 2rem; margin: 0; width: 100%;}
+    .dll-transactions .published-date {position: absolute; bottom: 5rem; left: 0; width: 100%; margin-right: 0; margin-left: 0;}
+}
+/*desktop*/
+@media (min-width: 1200px){
+    /*filter options*/
+    .dll-transactions .dll-filter-section {flex-wrap: nowrap;}
+    .dll-transactions .dll-filter-dropdowns {margin-bottom: 0;}
+    .dll-transactions .apply-reset-button {width: auto; margin: 0 0 0 4.167%;}
+    /*pagination*/
+    .dll-transactions .dll-pagination-container .pagination {margin: 7.5rem auto;}
+    /*tombstone cards*/
+    .dll-transactions .tombstone-container {width: 31.333% !important; margin: 7.5rem .8rem !important;}
+    .dll-transactions .tombstone-container:nth-child(2n) {border-right: 2px solid #F0F0F0;}
+    .dll-transactions .tombstone-container:nth-child(3n) {border-right: 2px solid #F0F0F0;}
+    .dll-transactions .tombstone-card-title {font-size: 2.4rem;}
+    .dll-transactions .tombstone-list-item {font-size: 2.4rem;}
+}
+
+@media screen and (max-width: 823px) and (min-width: 551px) {
+	.dll-transactions .tombstone-card-title {margin: 1rem 8.333%;}
+}
+
+
+
+/*cards with no logo*/
+.dll-transactions .tombstone-list-item li {margin: 0 12.5%;}
+.dll-transactions .tombstone-list-item li:nth-child(2) {position: absolute; top: 6rem; left: 0; right: 0; display: flex; align-items: center; justify-content: center; height: 10rem; font-size: 3.4rem; line-height: 1em; font-weight: 300; color: #2E1A47;}
+.dll-transactions .tombstone-container {padding: 6rem 4rem;}
+.dll-transactions .tombstone-card-description {margin: 3rem 8.333%;}
+.dll-transactions .tombstone-card-title {width: auto; margin: 0 8.333%; left: 0; right: 0;}
+@media (min-width: 768px) {
+	.dll-transactions .tombstone-list-item li:nth-child(1) {position: absolute; left: 0; right: 0; bottom: 10rem; height: 8rem;}
+	.dll-transactions .tombstone-list-item li:nth-child(2) {top: 12rem;}
+	.dll-transactions .tombstone-container {padding: 12rem 8rem;}
+	.dll-transactions .tombstone-card-description {min-height: auto;}
+	.dll-transactions .tombstone-container {padding: 12rem 8rem 21rem 8rem;}
+}

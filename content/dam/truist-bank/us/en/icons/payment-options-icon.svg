@@ -1,0 +1,21 @@
+<svg class="payment-options-icon-65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="65" x="0px" y="0px"
+	 viewBox="0 0 65 65">
+<style type="text/css">
+	.st0{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-miterlimit:3.998;}
+	.st1{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="Group_14577" transform="translate(-81.905 -90.728)">
+	<path id="Path_9730" class="st0" d="M139.5,133.3c4.3,0,7.7-3.4,7.7-7.7l0,0v-18.3c0-4.3-3.4-7.7-7.7-7.7h-36.6
+		c-4.3,0-7.7,3.4-7.7,7.7l0,0"/>
+	<path id="Rectangle_785" class="st1" d="M90.5,111.6h36.6c4.6,0,8.4,3.7,8.4,8.4v18.8c0,4.6-3.7,8.4-8.4,8.4H90.5
+		c-4.6,0-8.4-3.7-8.4-8.4V120C82.2,115.4,85.9,111.6,90.5,111.6z"/>
+	<line id="Line_134" class="st1" x1="90.3" y1="133.5" x2="96.6" y2="133.5"/>
+	<line id="Line_138" class="st1" x1="90.3" y1="138.8" x2="111.4" y2="138.8"/>
+	<line id="Line_135" class="st1" x1="99.8" y1="133.5" x2="106.1" y2="133.5"/>
+	<line id="Line_136" class="st1" x1="109.3" y1="133.5" x2="115.6" y2="133.5"/>
+	<line id="Line_137" class="st1" x1="118.8" y1="133.5" x2="125.1" y2="133.5"/>
+	<path id="Rectangle_784" class="st2" d="M89.4,122.4h3.2c0.6,0,1,0.5,1,1v3.2c0,0.6-0.5,1-1,1h-3.2c-0.6,0-1-0.5-1-1v-3.2
+		C88.4,122.9,88.9,122.4,89.4,122.4z"/>
+</g>
+</svg>

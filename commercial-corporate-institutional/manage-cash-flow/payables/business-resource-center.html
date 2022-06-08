@@ -1,0 +1,4023 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	
+		<meta charset="UTF-8"/>
+		
+		
+		<title>Resources for Commercial Accounts Payables | Truist</title>
+
+		
+	    
+	    
+	    <meta name="description" content=" Truist can help expand your knowledge of commercial accounts payables. Visit our business resource center for trending topics, insights, and research. "/>
+	    <meta name="template" content="truistdotcom-commercial-template"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		
+	    
+		
+		<meta property="og:title" content="Resources for Commercial Accounts Payables | Truist"/>
+		<meta property="og:description" content=" Truist can help expand your knowledge of commercial accounts payables. Visit our business resource center for trending topics, insights, and research. "/>
+		<meta property="og:image" content="../../../index.html"/>
+		<meta property="og:image:alt"/>
+		<meta property="og:image:width" content="600"/>
+		<meta property="og:image:height" content="315"/>
+		<meta property="og:url" content="business-resource-center.html"/>
+		<meta property="og:site_name" content="Truist"/>
+		<meta property="fb:app_id" content="fb"/>
+		
+			
+		
+		<meta property="icon"/>
+		
+	    
+		<meta property="eyebrow" content="Payables"/>
+		<meta property="line-of-business"/>
+		<meta property="category"/>
+		<meta property="product"/>
+	
+		
+		
+		
+		
+
+	
+    
+	
+	
+		<!-- For cannonical tag url -->
+		
+	    <link rel="canonical" href="business-resource-center.html"/>
+
+
+	
+    	
+	
+
+	<!--For Data Layer -->
+	<script type="text/javascript">
+    window.glbPageData = window.glbPageData || [];
+    glbPageData.ptLOB= "";
+    glbPageData.ptProductService= "";
+    glbPageData.ptPageGroup= "";
+    glbPageData.ptPageContentType= "";
+    glbPageData.ptPageTopic= "";
+    glbPageData.prodView= "";
+</script>
+
+	<!-- For prefetch  -->
+	<!-- prefetch fonts-->
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/icomoon.ttf" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/icomoon.woff" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/sun-icons-UXd1Fq6.eot" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/sun-icons-UXd1Fq6.ttf" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/sun-icons-UXd1Fq6.woff" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/truist-icons.eot" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/truist-icons.svg" as="font/woff2" crossorigin="anonymous"/>
+<link rel="prefetch" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-site/resources/fonts/truist-icons.ttf" as="font/woff2" crossorigin="anonymous"/>
+
+	<!-- mandatory script starts -->
+<Script>
+(function marTech(parentScope, marTechInterface) {
+	'use strict';
+	var version = '1.3.0';
+	parentScope[marTechInterface] = {};
+	// find or listen for tag manager ASAP
+	var tagManager = {};
+	var buses = {
+		launch: {
+			isPresent: !!window._satellite && !!window._satellite.company,
+			trigger: function (ruleName, eventDetail) {
+				window._satellite.track(ruleName, eventDetail);
+			},
+			get: function (varName) {
+				return window._satellite.getVar(varName);
+			}
+		},
+		ensighten: {
+			isPresent: !!window.Bootstrapper,
+			trigger: function (ruleName, eventDetail) {
+				window.Bootstrapper.ensEvent.trigger(ruleName, eventDetail);
+			},
+			get: function (varName) {
+				return window.Bootstrapper.getVariable(varName);
+			}
+		}
+	};
+	var dispatchMarTechInit = function(){
+		tagManager.trigger('marTechInit', parentScope[marTechInterface]);
+	};
+	var init = function () {
+		for (var bus in buses) {
+			if (buses.hasOwnProperty(bus) && buses[bus].isPresent) {
+				tagManager = buses[bus];
+				break;
+			}
+		}
+		if (tagManager.isPresent) {
+			dispatchMarTechInit();
+		} else {
+			var tagManagerInit = function (tagManagerName, tagManagerInitEvent) {
+				tagManager = buses[tagManagerName];
+				trackQueue();
+				dispatchMarTechInit();
+			}
+			window.addEventListener('BootstrapInitialized', function () {
+				tagManagerInit('ensighten');
+			});
+			window.addEventListener('AdobeLaunchInitialized', function () {
+				tagManagerInit('launch');
+			});
+		}
+	};
+	// Define everything locally, then expose refrencially
+	var marTechData = {}; // centralized data for Analytics, Target, and others
+	var marTechCalls = []; // array of previous calls
+	var setVar = function (name, value) {
+		if (typeof name === 'string' && name) {
+			marTechData[name] = value;
+			var trackable = false;
+			switch (typeof value) {
+				case 'string':
+				case 'number':
+					trackable = true;
+			}
+		}
+	};
+	var getVar = function (name,fromTagManager) {
+		if (typeof name === 'string' && name) {
+			if (fromTagManager && tagManager.get) {
+				return tagManager.get(name);
+			}
+			return marTechData[name];
+		}
+	};
+	var getDataElement = function (name) {
+		getVar(name,true);
+	};
+	var clearVar = function (name) {
+		if (typeof name === 'string' && name && typeof marTechData[name] !== 'undefined') {
+			delete marTechData[name];
+		}
+	};
+	var setVars = function () {
+		// Accepts a flat name-value paired object or a csv of name1,value1,name2,value2,etc.
+		var i = 0,
+			l = 0;
+		if (typeof arguments[0] === 'object') {
+			var names = Object.keys(arguments[0]);
+			l = names.length;
+			for (i; i < l; i++) {
+				setVar(names[i], arguments[0][names[i]]);
+			}
+		} else if (typeof arguments[0] === 'string') {
+			l = arguments.length;
+			for (i; i < l; i += 2) {
+				setVar(arguments[i], arguments[i + 1]);
+			}
+		}
+	};
+	var getVars = function () {
+		// Returns requested values based on a list of names
+		var i = 0,
+			l = arguments.length,
+			values = [];
+		for (i; i < l; i++) {
+			if (typeof arguments[i] === 'string') {
+				values.push(getVar(arguments[i]));
+			}
+		}
+		return values;
+	};
+	var clearVars = function () {
+		// Deletes values based on a list of names
+		var i = 0,
+			l = arguments.length;
+		for (i; i < l; i++) {
+			if (typeof arguments[i] === 'string') {
+				clearVar(arguments[i]);
+			}
+		}
+	};
+	var getAllVars = function () {
+		//IE cannot do this without polyfill
+		if(Object.assign){
+			var marTechDataCache = Object.assign({}, marTechData);
+			return marTechDataCache;
+		}
+	};
+	var clearAllVars = function () {
+		marTechData = {};
+	};
+	var tagManagerCall = function (callType, options) {
+		if (!callType) {
+			return;
+		}
+		options = options || {};
+		if (options.cData) {
+			setVars(options.cData);
+		}
+		options.marTechData = getAllVars();
+		options.actionElement = options.actionElement || true;
+		var called = false;
+		if (tagManager.trigger) {
+			tagManager.trigger(callType, options);
+			called = true;
+		}
+		if (options.callback && options.timeout && !called){
+			options.callTimeout = setTimeout(options.callback, options.timeout);
+		}
+		//make sure to store the data with a proper name
+		marTechCalls.push({
+			'callType': callType,
+			'called': called,
+			'options': options
+		});
+		if (!options.keepVars) {
+			clearAllVars();
+		} // This logic is concerning for sendEvent()
+		return options.marTechData;
+	};
+	var sendEvent = function (type, options) {
+		tagManagerCall(type, options);
+	};
+	var trackState = function (cData) {
+		tagManagerCall('trackState', {
+			'cData': cData
+		});
+	};
+	var trackAction = function (cData, actionElement) {
+		tagManagerCall('trackAction', {
+			'cData': cData,
+			'actionElement': actionElement
+		});
+	};
+	var getOffers = function (cData, callback, timeout) {
+		if (typeof cData === 'undefined') {
+			//Look for offers cache to return.
+			return getVar('offers');
+		} else if (typeof callback !== 'function') {
+			console.log('cannot call getOffers without a callback');
+			return;
+		} else {
+			tagManagerCall('getOffers', {
+				'cData': cData,
+				'callback': callback,
+				'keepVars': true,
+				'timeout': timeout || 500
+			});
+		}
+	};
+	var offerRendered = function (cData, offerMetadata) {
+		tagManagerCall('offerRendered', {
+			'cData': cData,
+			'offerMetadata': offerMetadata
+		});
+	};
+	var offerFailed = function (cData, offerMetadata) {
+		tagManagerCall('offerFailed', {
+			'cData': cData,
+			'offerMetadata': offerMetadata
+		});
+	};
+	var offerInteraction = function (cData, offerMetadata, actionElement) {
+		tagManagerCall('offerInteraction', {
+			'cData': cData,
+			'offerMetadata': offerMetadata,
+			'actionElement': actionElement
+		});
+	};
+	var trackQueue = function () {
+		// Tracks all pending tracking calls at 200ms intervals to ensure proper processing
+		marTechCalls.forEach(function (call, index) {
+			if (!call.called) {
+				if(call.options && call.options.callTimeout){
+					clearTimeout(call.options.callTimeout);
+				}
+				setTimeout((function (index) {
+					return function () {
+						//console.log('trackQueue for call',index,call);
+						tagManagerCall(call.callType, call.options);
+						marTechCalls[index].called = true;
+					};
+				}(index)), (200 * index));
+			}
+		});
+	};
+	parentScope[marTechInterface].getDataElement = getDataElement;
+	parentScope[marTechInterface].setVar = setVar;
+	parentScope[marTechInterface].getVar = getVar;
+	parentScope[marTechInterface].clearVar = clearVar;
+	parentScope[marTechInterface].setVars = setVars;
+	parentScope[marTechInterface].getVars = getVars;
+	parentScope[marTechInterface].getOffers = getOffers;
+	parentScope[marTechInterface].offerRendered = offerRendered;
+	parentScope[marTechInterface].offerFailed = offerFailed;
+	parentScope[marTechInterface].offerInteraction = offerInteraction;
+	parentScope[marTechInterface].clearVars = clearVars;
+	parentScope[marTechInterface].getAllVars = getAllVars;
+	parentScope[marTechInterface].clearAllVars = clearAllVars;
+	parentScope[marTechInterface].trackState = trackState;
+	parentScope[marTechInterface].trackAction = trackAction;
+	parentScope[marTechInterface].version = version;
+	init();
+})(window, 'marTech');
+</script>
+<!-- mandatory script ends -->
+
+	
+	<script type="text/javascript" src="../../../../assets.adobedtm.com/550322ae7d69/9113c9ef16ff/launch-003a007a2c4b.min.js"></script>
+    
+
+    
+
+
+
+
+
+
+
+
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.25a8717a0855da7d862c70f8ff5ab45e.css" type="text/css">
+
+
+
+
+<!-- Author specific CSS -->
+
+    
+
+
+
+
+<!-- Site Specific CSS -->
+
+     
+         
+             
+    
+<link rel="stylesheet" href="../../../etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.62a0d506e08ab81427b152ef29bcfa53.css" type="text/css">
+
+
+
+         
+     
+
+<!-- Site specific CSS Asset -->
+
+    
+        <link rel="stylesheet" type="text/css" href="../../../content/dam/truist-bank/css/custom.css"/>
+    
+
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+
+<!-- Live Chat Configuration script -->
+<script type="text/javascript" src="../../../../dias.bank.truist.com/ui/scripts/truist_common.js"></script>
+<!-- Login Configuration script -->
+
+</head>
+    <body class="page basicpage" id="page-7aae07e15f">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            <div class="sun-page" data-suntrust-class="suntrust-page" id="suntrust-page">
+<div class="root responsivegrid">
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="headertag aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<header class="global-header author-headertag-styling">
+	
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="header-grid" class="header-grid-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="skipcontent aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<div class="author-skipcontent-styling">
+	<a class="skip-main" href="#main">Skip to main content</a>
+</div></div>
+<div class="experiencefragment aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    
+    
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="segmentnavigation aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+   
+
+
+<div id="segment-navigation-1740149624" class="truist-globalnav-nav-container dcm-global-nav nav-comm-segment" data-wa-component="global_nav">
+   <h3 class="sr-only">global navigation</h3>
+   <div class="truist-global-nav-purple-outer-wrap">
+      <div class="truist-global-nav-content-wrap truist-globalnav-utility-padding truist-display-mobile-none">
+         <nav aria-label="segments" id="global-left-utility" class="truist-global-nav-left-section-desktop">
+            <ul class="truist-global-nav-left-section">
+               <li class="truist-global-nav-menuitem">
+                  <a class="truist-global-nav-menuitem-a" href="../../../index.html" data-wa-track-clk="1" data-wa-linkname="Personal" data-wa-linktype="navigation" data-wa-linkurl="/"><span class="truist-global-nav-menuitem-a-active">Personal</span></a>
+               </li>
+               
+            
+               <li class="truist-global-nav-menuitem">
+                  <a class="truist-global-nav-menuitem-a" href="../../../small-business.html" data-wa-track-clk="1" data-wa-linkname="Small Business" data-wa-linktype="navigation" data-wa-linkurl="/small-business"><span class="truist-global-nav-menuitem-a-active">Small Business</span></a>
+               </li>
+               
+            
+               <li class="truist-global-nav-menuitem">
+                  <a class="truist-global-nav-menuitem-a" href="../../../wealth.html" data-wa-track-clk="1" data-wa-linkname="Wealth" data-wa-linktype="navigation" data-wa-linkurl="/wealth"><span class="truist-global-nav-menuitem-a-active">Wealth</span></a>
+               </li>
+               
+            
+               <li class="truist-global-nav-menuitem">
+                  <a class="truist-global-nav-menuitem-a" href="../../../commercial-corporate-institutional.html" data-wa-track-clk="1" data-wa-linkname="Commercial, Corporate &amp; Institutional" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional"><span class="truist-global-nav-menuitem-a-active">Commercial, Corporate &amp; Institutional</span></a>
+               </li>
+               <li class="truist-global-nav-menuitem">
+                  <a class="truist-global-nav-menuitem-a truist-global-nav-menuitem-arrow-a" href="#" role="button" aria-expanded="false" aria-controls="global-left-utility">
+                     <span class="truist-global-nav-menuitem-arrow truist-global-nav-menuitem-arrow-segment"></span>
+                     <span class="sr-only">more segment links</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+
+         <nav aria-label="global utility" id="global-right-utility" class="truist-global-nav-right-section-desktop">
+            <ul class="truist-global-nav-right-section">
+               
+                  
+                  
+                     
+                     
+                     
+                  
+                  
+                  <li class="truist-global-nav-menuitem truist-global-nav-menuitem-search truist-global-nav-menuitem-search-desktop">
+                     
+                        <div class="truist-global-nav-util-search">
+                           
+    <div id="sb_header_root"></div>
+
+                        </div>
+                     
+                     
+                     
+                  </li>
+               
+                  
+                     
+                     
+                  
+                  
+                  
+                  <li class="truist-global-nav-menuitem ">
+                     
+                     
+                        <a class="truist-global-nav-menuitem-a truist-global-nav-utility-right-a truist-global-nav-utility-right-a-fatm" href="../../../locations.html" role="link" target="_self" data-wa-track-clk="1" data-wa-linkname="Locations" data-wa-linktype="navigation" data-wa-linkurl="/locations">
+                           <img class="truist-global-nav-utility-icon" src="http://static.truist.com/content/dam/global-images/location-icon.svg" alt=""/>
+                           <span class="truist-global-nav-utility-link-text">Locations</span>
+                           
+                        </a>
+                     
+                     
+                  </li>
+               
+                  
+                     
+                     
+                  
+                  
+                  
+                  <li class="truist-global-nav-menuitem ">
+                     
+                     
+                        <a class="truist-global-nav-menuitem-a truist-global-nav-utility-right-a truist-global-nav-utility-right-a-fatm" href="../../../contact.html" role="link" target="_self" data-wa-track-clk="1" data-wa-linkname="Contact" data-wa-linktype="navigation" data-wa-linkurl="/contact">
+                           <img class="truist-global-nav-utility-icon" src="http://static.truist.com/content/dam/global-images/contact-icon.svg" alt=""/>
+                           <span class="truist-global-nav-utility-link-text">Contact</span>
+                           
+                        </a>
+                     
+                     
+                  </li>
+               
+                  
+                  
+                  
+                     
+                     
+                  
+                  <li class="truist-global-nav-menuitem truist-global-nav-menuitem-more-button">
+                     
+                     
+                        <a class="truist-global-nav-menuitem-a truist-global-nav-utility-right-a truist-global-nav-menuitem-a-more" href="#" role="button" id="globalUtilMore" aria-expanded="false">
+                           <img class="truist-global-nav-utility-icon" src="http://static.truist.com/content/dam/global-images/more-icon.svg" alt=""/>
+                           <span class="truist-global-nav-utility-link-text" id="truist-global-nav-more-text">More</span>
+                           
+                              <span class="truist-global-nav-menuitem-arrow-more"></span>
+                           
+                        </a>
+                     
+                     
+                        <div class="truist-global-nav-more-submenu" aria-labelledby="globalUtilMore" role="navigation">
+                           <ul class="truist-global-nav-more-ul">
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="../../../who-we-are/about-truist.html" target="_self" data-wa-track-clk="1" data-wa-linkname="About Truist" data-wa-linktype="navigation" data-wa-linkurl="/who-we-are/about-truist">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       About Truist
+                                    </a>
+                                 </li>
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="../../../care.html" target="_self" data-wa-track-clk="1" data-wa-linkname="Care" data-wa-linktype="navigation" data-wa-linkurl="/care">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       Care
+                                    </a>
+                                 </li>
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="../../../fraud-and-security.html" target="_self" data-wa-track-clk="1" data-wa-linkname="Fraud and security" data-wa-linktype="navigation" data-wa-linkurl="/fraud-and-security">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       Fraud and security
+                                    </a>
+                                 </li>
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="../../../payment-relief/personal-loans.html" target="_self" data-wa-track-clk="1" data-wa-linkname="Payment relief" data-wa-linktype="navigation" data-wa-linkurl="/payment-relief/personal-loans">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       Payment relief
+                                    </a>
+                                 </li>
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="https://careers.truist.com/" target="_blank" data-wa-track-clk="1" data-wa-linkname="Careers" data-wa-linktype="navigation" data-wa-linkurl="https://careers.truist.com/">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       Careers
+                                    </a>
+                                 </li>
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="../../../privacy.html" target="_self" data-wa-track-clk="1" data-wa-linkname="Privacy" data-wa-linktype="navigation" data-wa-linkurl="/privacy">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       Privacy
+                                    </a>
+                                 </li>
+                              
+                                 <li class="truist-global-nav-more-li">
+                                    <a class="truist-global-nav-menuitem-a" href="../../../terms-and-conditions.html" target="_self" data-wa-track-clk="1" data-wa-linkname="Legal" data-wa-linktype="navigation" data-wa-linkurl="/terms-and-conditions">
+                                       <img class="truist-global-nav-utility-icon" alt=""/>
+                                       Legal
+                                    </a>
+                                 </li>
+                              
+                           </ul>
+                        </div>
+                     
+                  </li>
+               
+            </ul>
+         </nav>
+      </div>
+      <div class="clear"></div>
+   </div>
+   <div class="truist-secondary-menu">
+      <div class="truist-global-nav-content-wrap">
+         <div class="truist-globalnav-navbar truist-globalnav-navbar-expand-lg truist-globalnav-navbar-dark">
+            <div class="truist-globalnav-header-logo">
+               <a class="truist-globalnav-navbar-brand" href="../../../index.html" data-wa-track-clk="1" data-wa-linkname="truist_logo" data-wa-linktype="navigation" data-wa-linkurl="/">
+                  <img src="http://static.truist.com/content/dam/global-images/truist-logo-purple.svg" class="truist-globalnav-logo-image d-inline-block" alt=""/>
+                  <span class="sr-only">Truist Personal Banking</span>
+               </a>
+            </div>
+            <div class="truist-global-nav-content-wrap truist-globalnav-utility-padding truist-globalnav-util-search-holder truist-display-mobile-none truist-display-menu-none" aria-label="global search">
+               <ul class="truist-global-nav-right-section truist-globalnav-search-placeholder">
+                  <li class="truist-global-nav-menuitem truist-global-nav-menuitem-search truist-global-nav-menuitem-search-mobile">
+                  </li>
+               </ul>
+            </div>
+            <div class="truist-global-nav-content-wrap truist-globalnav-utility-padding truist-globalnav-util-left-holder truist-display-mobile-none truist-display-menu-none">
+
+            </div>
+            
+               
+                  
+                  
+   
+
+
+<div id="Header-Navigation-1244809228" class="headernavigation truist-globalnav-header-links truist-display-mobile-none main-commercial-nav">
+   <div class="truist-globalnav-navbar-collapse nav-dropdown-options">
+      <h3 class="sr-only">Commercial Navigation</h3>
+      <nav aria-label="Commercial Navigation" id="global-main-nav-Header-Navigation-1244809228">
+         <ul class="truist-globalnav-navbar-nav">
+            
+               
+                  
+                  
+   
+
+<li class="truist-globalnav-nav-item nav-comm-strat-advice">
+   
+      <a data-wa-track-clk="1" data-wa-linkname="Strategic advice" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/strategic-advice" class="truist-globalnav-nav-link" role="link" href="../../strategic-advice.html">Strategic advice</a>
+   
+   
+</li>
+
+               
+            
+               
+                  
+                  
+   
+
+
+<li class="truist-globalnav-nav-item dropdown nav-comm-industry-expertise">
+   <a class="truist-globalnav-nav-link truist-globalnav-secondnav-button truist-globalnav-dropdown-toggle" href="#" id="Primary-Navigation-1624979409" role="button" aria-expanded="false">
+      <!--Please check the html structure if this is dropdown link below-->
+      <span class="truist-globalnav-header-linktext">Industry expertise</span>
+      <span class="truist-global-nav-menuitem-arrow-header"></span>
+   </a>
+   <div class="truist-globalnav-dropdown-menu" aria-labelledby="Primary-Navigation-1624979409" data-wa-component="Industry expertise" role="navigation" id="Primary-Navigation-1624979409-Industry-expertise">
+      
+      <div class="truist-globalnav-fullwidth-container">
+         <div class="truist-globalnav-dropdown-container">
+            <div class="truist-globalnav-dropdownlinks">
+               
+                  <div class="truist-globalnav-sub-menu-section">
+                     <div class="truist-globalnav-sub-menu-header" id="Primary-Navigation-1624979409-Our-industries-1" role="heading" aria-level="4">
+                        Our industries
+                     </div>
+                     <div aria-labelledby="Primary-Navigation-1624979409-Our-industries-1" role="navigation" id="links-1-Primary-Navigation-1624979409-Our-industries-1">
+                        
+                           <ul class="truist-globalnav-dropdown-menu-ul">
+                              
+                                 
+                                 
+   
+
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Association Services" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/association-services" href="../../industry-expertise/association-services.html" target="_self">
+         <span>Association Services</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Auto dealers" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/auto-dealer" href="../../industry-expertise/auto-dealer.html" target="_self">
+         <span>Auto dealers</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Beverage" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/beverage" href="../../industry-expertise/beverage.html" target="_self">
+         <span>Beverage</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Building products" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/building-products" href="../../industry-expertise/building-products.html" target="_self">
+         <span>Building products</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Commercial real estate" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/commercial-real-estate" href="../../industry-expertise/commercial-real-estate.html" target="_self">
+         <span>Commercial real estate</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Education" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/education" href="../../industry-expertise/education.html" target="_self">
+         <span>Education</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Food &amp; agribusiness" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/food-agribusiness" href="../../industry-expertise/food-agribusiness.html" target="_self">
+         <span>Food &amp; agribusiness</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Foundations &amp; endowments" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/foundations-endowments" href="../../foundations-endowments.html" target="_self">
+         <span>Foundations &amp; endowments</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Not-for-profit hospitals &amp; health systems" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/health-care" href="../../industry-expertise/health-care.html" target="_self">
+         <span>Not-for-profit hospitals &amp; health systems</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Logistics &amp; supply chain" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/logistics-supply-chain" href="../../industry-expertise/logistics-supply-chain.html" target="_self">
+         <span>Logistics &amp; supply chain</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Marine &amp; RV" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/marine-rv" href="../../industry-expertise/marine-rv.html" target="_self">
+         <span>Marine &amp; RV</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Senior care" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/industry-expertise/senior-care" href="../../industry-expertise/senior-care.html" target="_self">
+         <span>Senior care</span>
+      </a>
+   </li>
+
+                              
+                           </ul>
+                        
+                        
+                     </div>
+                  </div>
+               
+            </div>
+            <div class="truist-globalnav-dropdownlinks truist-display-mobile-none" aria-label="product promotion">
+            </div>
+         </div>
+      </div>
+   </div>
+</li>
+               
+            
+               
+                  
+                  
+   
+
+
+<li class="truist-globalnav-nav-item dropdown nav-comm-investment-banking">
+   <a class="truist-globalnav-nav-link truist-globalnav-secondnav-button truist-globalnav-dropdown-toggle" href="#" id="Primary-Navigation-1673076719" role="button" aria-expanded="false">
+      <!--Please check the html structure if this is dropdown link below-->
+      <span class="truist-globalnav-header-linktext">Corporate &amp; investment banking</span>
+      <span class="truist-global-nav-menuitem-arrow-header"></span>
+   </a>
+   <div class="truist-globalnav-dropdown-menu" aria-labelledby="Primary-Navigation-1673076719" data-wa-component="Corporate &amp; investment banking" role="navigation" id="Primary-Navigation-1673076719-Corporate-&amp;-investment-banking">
+      <div class="truist-globalnav-seventythirty-container">
+         <div class="truist-globalnav-dropdown-container">
+            <div class="truist-globalnav-dropdownlinks">
+               
+                  <div class="truist-globalnav-sub-menu-section">
+                     <div class="truist-globalnav-sub-menu-header" id="Primary-Navigation-1673076719-Our-solutions-1" role="heading" aria-level="4">
+                        Our solutions
+                     </div>
+                     <div aria-labelledby="Primary-Navigation-1673076719-Our-solutions-1" role="navigation" id="links-1-Primary-Navigation-1673076719-Our-solutions-1">
+                        
+                           <ul class="truist-globalnav-dropdown-menu-ul">
+                              
+                                 
+                                 
+   
+
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Truist Securities" data-wa-linktype="navigation" data-wa-linkurl="https://www.truistsecurities.com" href="https://www.truistsecurities.com/" target="_blank" rel="noreferrer">
+         <span>Truist Securities</span>
+      </a>
+   </li>
+
+                              
+                           </ul>
+                        
+                        
+                     </div>
+                  </div>
+               
+            </div>
+            <div class="truist-globalnav-dropdownlinks truist-display-mobile-none none" aria-label="product promotion">
+               
+               
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="staticcard aem-GridColumn aem-GridColumn--default--12">
+    <div class="truist-global-staticcard-column  truist-global-staticcard-column-grey " data-wa-component="static_component">
+        <!--Below divs are card contents, as per the requirement almost all contents are optional, use sly-test condition inject elements as per content author requirement-->
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-img-top">
+                <div class="truist-global-staticcard-img-badge">
+                    
+                </div>
+                <img class="truist-global-staticcard-img" src="http://static.truist.com/content/dam/truist-bank/us/en/icons/promo-commercial.svg" alt=""/>
+            </div>
+        </div>
+        
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-eyebrow truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                
+            </div>
+        </div>
+
+        
+            <div class="truist-global-staticcard-row">
+                
+                    <h2 class="truist-global-staticcard-cardtitle truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                        Experts by industry. Partners in growth.
+                    </h2>
+                
+                
+                
+            </div>
+        
+
+        
+        <div class="truist-global-staticcard-row">
+            <p class="truist-global-staticcard-cardcontent truist-global-staticcard-content-padding">
+                <p>Relationships built with care.</p>
+
+            </p>
+        </div>
+        <div class="truist-global-staticcard-row" data-wa-component="Experts by industry. Partners in growth.">
+            <div class="truist-global-staticcard-card-cta-button truist-global-staticcard-content-padding">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cta button aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+            
+        
+        
+            
+        
+
+        <div id="cta-nav-menu-dropdown-promo-commercial-investment" class="author-cta-styling global-cta--link  gl-align-left  " data-wa-component="CTA">
+            
+            
+            
+            <a href="https://www.truistsecurities.com/" target="_blank" rel="noreferrer" class=" cta-nav-menu-dropdown-promo-commercial-investment   gl-align-left   " data-wa-track-clk="1" data-wa-linkname="Truist Securities can help." data-wa-linktype="navigation" data-wa-linkurl="https://www.truistsecurities.com/">Truist Securities can help.
+                
+                
+            </a>
+        </div>
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+            </div>
+         </div>
+      </div>
+      
+   </div>
+</li>
+               
+            
+               
+                  
+                  
+   
+
+<li class="truist-globalnav-nav-item nav-comm-get-financing">
+   
+      <a data-wa-track-clk="1" data-wa-linkname="Financing" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/financing" class="truist-globalnav-nav-link" role="link" href="../../financing.html">Financing</a>
+   
+   
+</li>
+
+               
+            
+               
+                  
+                  
+   
+
+
+<li class="truist-globalnav-nav-item dropdown nav-comm-manage-cash">
+   <a class="truist-globalnav-nav-link truist-globalnav-secondnav-button truist-globalnav-dropdown-toggle" href="#" id="Primary-Navigation-469757073" role="button" aria-expanded="false">
+      <!--Please check the html structure if this is dropdown link below-->
+      <span class="truist-globalnav-header-linktext">Manage cash flow</span>
+      <span class="truist-global-nav-menuitem-arrow-header"></span>
+   </a>
+   <div class="truist-globalnav-dropdown-menu" aria-labelledby="Primary-Navigation-469757073" data-wa-component="Manage cash flow" role="navigation" id="Primary-Navigation-469757073-Manage-cash-flow">
+      <div class="truist-globalnav-seventythirty-container">
+         <div class="truist-globalnav-dropdown-container">
+            <div class="truist-globalnav-dropdownlinks">
+               
+                  <div class="truist-globalnav-sub-menu-section">
+                     
+                     <div aria-labelledby="Primary-Navigation-469757073-1" role="navigation" id="links-1-Primary-Navigation-469757073-1">
+                        
+                           <ul class="truist-globalnav-dropdown-menu-ul">
+                              
+                                 
+                                 
+   
+
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Checking" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/checking-solutions" href="../checking-solutions.html" target="_self">
+         <span>Checking</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Money market &amp; CD" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/savings" href="../savings.html" target="_self">
+         <span>Money market &amp; CD</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Commercial cards" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/credit-cards" href="../credit-cards.html" target="_self">
+         <span>Commercial cards</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Truist One View" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/truist-one-view" href="../truist-one-view.html" target="_self">
+         <span>Truist One View</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Information reporting" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/information-reporting" href="../information-reporting.html" target="_self">
+         <span>Information reporting</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Payables" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/payables" href="../payables.html" target="_self">
+         <span>Payables</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Receivables" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/receivables" href="../receivables.html" target="_self">
+         <span>Receivables</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Sweep" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/sweep-solutions" href="../sweep-solutions.html" target="_self">
+         <span>Sweep</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Merchant Services" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/merchant-services" href="../merchant-services.html" target="_self">
+         <span>Merchant Services</span>
+      </a>
+   </li>
+
+                              
+                           </ul>
+                        
+                        
+                     </div>
+                  </div>
+               
+            </div>
+            <div class="truist-globalnav-dropdownlinks truist-display-mobile-none none" aria-label="product promotion">
+               
+               
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="staticcard aem-GridColumn aem-GridColumn--default--12">
+    <div class="truist-global-staticcard-column  truist-global-staticcard-column-grey " data-wa-component="static_component">
+        <!--Below divs are card contents, as per the requirement almost all contents are optional, use sly-test condition inject elements as per content author requirement-->
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-img-top">
+                <div class="truist-global-staticcard-img-badge">
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-eyebrow truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                
+            </div>
+        </div>
+
+        
+            <div class="truist-global-staticcard-row">
+                
+                    <h2 class="truist-global-staticcard-cardtitle truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                        Access your accounts with single sign on.
+                    </h2>
+                
+                
+                
+            </div>
+        
+
+        
+        <div class="truist-global-staticcard-row">
+            <p class="truist-global-staticcard-cardcontent truist-global-staticcard-content-padding">
+                <p>Do more with Truist One View.</p>
+
+            </p>
+        </div>
+        <div class="truist-global-staticcard-row" data-wa-component="Access your accounts with single sign on.">
+            <div class="truist-global-staticcard-card-cta-button truist-global-staticcard-content-padding">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cta button aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+            
+        
+        
+            
+        
+
+        <div id="cta-nav-menu-dropdown-promo-commercial-cash-flow" class="author-cta-styling global-cta--link  gl-align-left  " data-wa-component="CTA">
+            
+            
+            
+            <a href="../truist-one-view.html" target="_self" class=" cta-nav-menu-dropdown-promo-commercial-cash-flow   gl-align-left   " data-wa-track-clk="1" data-wa-linkname="Get started." data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/truist-one-view">Get started.
+                
+                
+            </a>
+        </div>
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+            </div>
+         </div>
+      </div>
+      
+   </div>
+</li>
+               
+            
+               
+                  
+                  
+   
+
+
+<li class="truist-globalnav-nav-item dropdown nav-comm-manage-risk">
+   <a class="truist-globalnav-nav-link truist-globalnav-secondnav-button truist-globalnav-dropdown-toggle" href="#" id="Primary-Navigation-144919101" role="button" aria-expanded="false">
+      <!--Please check the html structure if this is dropdown link below-->
+      <span class="truist-globalnav-header-linktext">Risk management</span>
+      <span class="truist-global-nav-menuitem-arrow-header"></span>
+   </a>
+   <div class="truist-globalnav-dropdown-menu" aria-labelledby="Primary-Navigation-144919101" data-wa-component="Risk management" role="navigation" id="Primary-Navigation-144919101-Risk-management">
+      <div class="truist-globalnav-seventythirty-container">
+         <div class="truist-globalnav-dropdown-container">
+            <div class="truist-globalnav-dropdownlinks">
+               
+                  <div class="truist-globalnav-sub-menu-section">
+                     <div class="truist-globalnav-sub-menu-header" id="Primary-Navigation-144919101-Our-solutions-1" role="heading" aria-level="4">
+                        Our solutions
+                     </div>
+                     <div aria-labelledby="Primary-Navigation-144919101-Our-solutions-1" role="navigation" id="links-1-Primary-Navigation-144919101-Our-solutions-1">
+                        
+                           <ul class="truist-globalnav-dropdown-menu-ul">
+                              
+                                 
+                                 
+   
+
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Business insurance" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/risk-management/business-insurance" href="../../risk-management/business-insurance.html" target="_self">
+         <span>Business insurance</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Check Fraud" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/risk-management/check-fraud-control" href="../../risk-management/check-fraud-control.html" target="_self">
+         <span>Check Fraud</span>
+      </a>
+   </li>
+
+   <li class="truist-globalnav-sub-menu-item ">
+      <a data-wa-track-clk="1" data-wa-linkname="Online ACH Fraud" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/risk-management/ach-fraud-control" href="../../risk-management/ach-fraud-control.html" target="_self">
+         <span>Online ACH Fraud</span>
+      </a>
+   </li>
+
+                              
+                           </ul>
+                        
+                        
+                     </div>
+                  </div>
+               
+            </div>
+            <div class="truist-globalnav-dropdownlinks truist-display-mobile-none none" aria-label="product promotion">
+               
+               
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="staticcard aem-GridColumn aem-GridColumn--default--12">
+    <div class="truist-global-staticcard-column  truist-global-staticcard-column-grey " data-wa-component="static_component">
+        <!--Below divs are card contents, as per the requirement almost all contents are optional, use sly-test condition inject elements as per content author requirement-->
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-img-top">
+                <div class="truist-global-staticcard-img-badge">
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-eyebrow truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                
+            </div>
+        </div>
+
+        
+            <div class="truist-global-staticcard-row">
+                
+                    <h2 class="truist-global-staticcard-cardtitle truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                        Build your plan against cyberattacks.
+                    </h2>
+                
+                
+                
+            </div>
+        
+
+        
+        <div class="truist-global-staticcard-row">
+            <p class="truist-global-staticcard-cardcontent truist-global-staticcard-content-padding">
+                <p>Learn best practices for fighting fraud.</p>
+
+            </p>
+        </div>
+        <div class="truist-global-staticcard-row" data-wa-component="Build your plan against cyberattacks.">
+            <div class="truist-global-staticcard-card-cta-button truist-global-staticcard-content-padding">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cta button aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+            
+        
+        
+            
+        
+
+        <div id="cta-nav-menu-dropdown-promo-commercial-risk" class="author-cta-styling global-cta--link  gl-align-left  " data-wa-component="CTA">
+            
+            
+            
+            <a href="../../risk-management/ach-fraud-control/business-resource-center.html" target="_self" class=" cta-nav-menu-dropdown-promo-commercial-risk   gl-align-left   " data-wa-track-clk="1" data-wa-linkname="Dig deeper." data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/risk-management/ach-fraud-control/business-resource-center">Dig deeper.
+                
+                
+            </a>
+        </div>
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+            </div>
+         </div>
+      </div>
+      
+   </div>
+</li>
+               
+            
+               
+                  
+                  
+   
+
+<li class="truist-globalnav-nav-item nav-comm-employee-benefits">
+   
+      <a data-wa-track-clk="1" data-wa-linkname="Employee benefits" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/employee-benefits" class="truist-globalnav-nav-link" role="link" href="../../employee-benefits.html">Employee benefits</a>
+   
+   
+</li>
+
+               
+            
+         </ul>
+      </nav>
+   </div>
+</div>
+
+               
+            
+               
+            
+               
+            
+               
+            
+            <div class="truist-global-nav-content-wrap truist-globalnav-utility-padding truist-globalnav-util-right-holder truist-display-mobile-none truist-display-menu-none">
+
+            </div>
+            <div class="clear"></div>
+            <div class="truist-globalnav-header-links js-desktop-loaded-global-navbar truist-globalnav-headerbtn-placeholder">
+               <div class="truist-globalnav-navbar-collapse">
+                  <div class="truist-globalnav-navbar-nav truist-globalnav-navbar-nav-cta">
+                     <div class="truist-globalnav-nav-item truist-globalnav-cta-btn">
+                        <a class="truist-globalnav-nav-link truist-globalnav-nav-link-signon js-desktop-loaded-global-navbar" href="#" id="signOnComp" role="button" aria-expanded="false" data-wa-track-clk="1" data-wa-linkname="sign in" data-wa-linktype="interaction">
+                           Sign in
+                           <img class="truist-global-nav-header-icon truist-global-nav-header-icon-sign-in" src="http://static.truist.com/content/dam/global-images/signin-icon.svg" alt=""/>
+                        </a>
+                     </div>
+                     <div class="truist-globalnav-nav-item truist-globalnav-cta-btn truist-globalnav-nav-item-hamburger truist-display-menu-none">
+                        <a class="truist-globalnav-nav-link truist-globalnav-nav-link-hamburger" href="#" role="button" aria-expanded="false" aria-label="navigation menu">
+                           <img class="truist-global-nav-header-icon" src="http://static.truist.com/content/dam/global-images/hamburger-menu.svg" alt=""/>
+                           <img class="truist-global-nav-header-icon truist-global-nav-header-icon-close truist-display-mobile-none" src="http://static.truist.com/content/dam/global-images/close-icon.svg" alt=""/>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="truist-globalnav-signon-container truist-display-menu-none" role="dialog" aria-labelledby="signOnComp">
+         
+            
+            
+	
+   <div class="global-login-container truist-color-theme " id="Login-1596089587">
+      <div class="global-login">
+         <div class="row">
+            <div class="col">
+               <div class="row">
+                  <div class="col login-heading-container d-md-none">
+                     
+                  </div> 
+               </div>
+               <div class="col d-none d-md-block"></div>
+               <div class="row  d-none d-md-flex">
+                  <div class="col-md-7 login-heading-container">
+                     
+                  </div>
+               </div>
+               <div class="row justify-content-md-center">
+                  
+                  <div class="col-md-5 login-right-section-container">
+                     
+                     
+                     
+                     
+                        <div class="row">
+                          <div class="col login-additional-info-container">
+                           <div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling"><h4 style="margin-bottom: 10.0px;">Truist Commercial Online</h4>
+</div>
+</div>
+<div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling "><p><strong>Heritage BB&amp;T View clients</strong>, access to Digital Treasury and other treasury applications.</p>
+</div>
+</div>
+<div class="cta button cta__color--midnight aem-GridColumn aem-GridColumn--default--12"><div id="cta-commercial-online" class="author-cta-styling global-cta-btn  gl-align-left  " data-wa-component="CTA"><a href="https://commercialonline.truist.com/commercial" target="_self" class="cta-commercial-online gl-align-center" data-wa-track-clk="1" data-wa-linkname="Sign in" data-wa-linktype="navigation" data-wa-linkurl="https://commercialonline.truist.com/commercial">Sign in</a></div>
+</div>
+<hr style="margin-top: 10.0px;height: 10.0px;" />
+
+
+                          </div>
+                        </div>
+                     
+                        <div class="row">
+                          <div class="col login-additional-info-container">
+                           <div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling"><h4 style="margin-bottom: 10.0px;">Truist Treasury Manager</h4>
+</div>
+</div>
+<div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling "><p><strong>Heritage SunTrust clients,</strong> access to Treasury Manager (formerly SunView Treasury Manager)</p>
+</div>
+</div>
+<div class="cta button cta__color--midnight aem-GridColumn aem-GridColumn--default--12"><div id="cta-treasury-manager" class="author-cta-styling global-cta-btn  gl-align-left  " data-wa-component="CTA"><a href="https://treasurymanager-login.truist.com/SunView/user/login" target="_self" class="cta-commercial-online gl-align-center" data-wa-track-clk="1" data-wa-linkname="Sign in" data-wa-linktype="navigation" data-wa-linkurl="https://treasurymanager-login.truist.com/SunView/user/login">Sign in</a></div>
+</div>
+<hr style="margin-top: 10.0px;height: 10.0px;" />
+
+
+                          </div>
+                        </div>
+                     
+                        <div class="row">
+                          <div class="col login-additional-info-container">
+                           <div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling"><h4 style="margin-bottom: 10.0px;">Truist One View</h4>
+</div>
+</div>
+<div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling "><p>Access to Digital Treasury, ACH Fraud Control, Remote Deposit Capture &amp; other treasury applications.</p>
+</div>
+</div>
+<div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling "><p><strong>Heritage SunTrust clients,</strong> access if formerly used single sign on SunView platform to access Treasury Manager, Online Check Deposits, and other treasury applications.</p>
+</div>
+</div>
+<div class="cta button cta__color--midnight aem-GridColumn aem-GridColumn--default--12"><div id="cta-one-view" class="author-cta-styling global-cta-btn  gl-align-left  " data-wa-component="CTA"><a href="https://oneview.truist.com/UI/login" target="_self" class="cta-one-view gl-align-center" data-wa-track-clk="1" data-wa-linkname="Sign in" data-wa-linktype="navigation" data-wa-linkurl="https://oneview.truist.com/UI/login">Sign in</a></div>
+</div>
+<hr style="margin-top: 10.0px;height: 10.0px;" />
+
+
+                          </div>
+                        </div>
+                     
+                        <div class="row">
+                          <div class="col login-additional-info-container">
+                           <div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><div class="author-rte-styling"><h4 style="margin-bottom: 20.0px;">Sign in to other Treasury &amp; Commercial applications</h4>
+</div>
+</div>
+<div class="cta button aem-GridColumn aem-GridColumn--default--12"><div id="cta-treasury-apps" class="author-cta-styling global-cta-btn  gl-align-left  " data-wa-component="CTA"><a href="../../sign-in.html" target="_self" class="cta-treasury-apps gl-align-center" data-wa-track-clk="1" data-wa-linkname="See other applications" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/sign-in">See other applications</a></div>
+</div>
+
+                          </div>
+                        </div>
+                     
+                     
+                  </div>
+               </div>
+            </div> 
+         </div>
+      </div>
+   </div>
+   </div>
+   </div>
+   <div class="experiencefragment aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"></div>
+   </div>
+
+	
+
+         
+      </div>
+   </div>
+</div></div>
+<div class="htmlcontainer aem-GridColumn aem-GridColumn--default--12">
+
+<style>
+.dcm-signon-container {border-bottom: 1px solid #2e1a47; margin-bottom: 35px;}
+</style></div>
+
+    
+</div>
+
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-header-grid" value="header-grid"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-header-grid"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-header-grid"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-header-grid"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-header-grid"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+</header></div>
+<div class="maincontent aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<div class="author-maincontent-styling">
+<a name="main"></a>
+</div>
+</div>
+<div class="maintag aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<main id="main" tabindex="-1" class="global-main author-maintag-styling">
+	
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="main-grid" class="main-grid-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 aem-Grid--phone--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid grid__bg-color--white aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1176009095" class="gridLayout-1176009095-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="secondarynavigation aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+    
+
+<div id="secondary-navigation-694254422--placeholder" class="secondary-nav--height-placeholder"></div>
+<div id="secondary-navigation-694254422" class="navbar-secondary__main-container" data-wa-component="secondary_navigation">
+    <!-- this is the container to style, desktop view-->
+    <div class="navbar-secondary__wrapper display--desktop ">
+        <div class="navbar-secondary__container">
+            <div class="navbar-secondary__heading-container">
+                <p class="navbar-secondary__heading">
+                    Manage cash flow</p>
+            </div>
+            
+                <div class="navbar-secondary__links">
+                    <ul class="secondary-navbar--page-links-list">
+                        
+                            <li class="navbar-secondary__link-li-item">
+                                <a class="navbar-secondary__link navbar-secondary__link-item" data-wa-track-clk="1" data-wa-linkname="Overview" data-wa-linktype="Navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/payables" data-wa-component="Overview" href="../payables.html">
+                                    Overview
+                                </a>
+                            </li>
+                        
+                            <li class="navbar-secondary__link-li-item">
+                                <a class="navbar-secondary__link navbar-secondary__link-item" data-wa-track-clk="1" data-wa-linkname="Business Resource Center" data-wa-linktype="Navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center" data-wa-component="Business Resource Center" href="business-resource-center.html">
+                                    Business Resource Center
+                                </a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            <!-- cta container -->
+            <div class="navbar-secondary__cta-wrapper">
+                
+            </div>
+            <!--end cta container-->
+        </div>
+    </div>
+    <!--end container to style-->
+
+    <!-- this is the container to style, mobile view-->
+    <div class="navbar-secondary__wrapper display--mobile overflow-visible ">
+        <div class="navbar-secondary__container">
+            <div class="navbar-secondary__heading-container">
+                <p class="navbar-secondary__heading">
+                    Manage cash flow</p>
+            </div>
+            
+                <div class="navbar-secondary__links">
+                    <button id="toggle-button" class="toggle-button navbar-secondary__link navbar-secondary__link-item" aria-expanded="false">
+                        <span id="toggle-button-text"></span><i class="fa fa-chevron-down"></i>
+                    </button>
+                    <ul id="dropdown-menu" style="display: none" class="secondary-navbar--page-links-list">
+
+                        
+                            <li class="dropdown-link-margin">
+
+                                <a class="navbar-secondary__link no-horizontal-margin navbar-secondary__link-item" data-wa-track-clk="1" data-wa-linkname="Overview" data-wa-linktype="Navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/payables" data-wa-component="Overview" href="../payables.html">
+                                    Overview
+                                </a>
+
+                            </li>
+
+                        
+                            <li class="dropdown-link-margin">
+
+                                <a class="navbar-secondary__link no-horizontal-margin navbar-secondary__link-item" data-wa-track-clk="1" data-wa-linkname="Business Resource Center" data-wa-linktype="Navigation" data-wa-linkurl="/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center" data-wa-component="Business Resource Center" href="business-resource-center.html">
+                                    Business Resource Center
+                                </a>
+
+                            </li>
+
+                        
+                    </ul>
+                </div>
+            
+
+            <!-- cta container -->
+            <div class="navbar-secondary__cta-wrapper">
+                
+            </div>
+            <!--end cta container-->
+        </div>
+    </div>
+    <!-- end container to style -->
+</div></div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1176009095" value="gridLayout-1176009095"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1176009095"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1176009095"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1176009095"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1176009095"/>
+    </div>
+
+</div>
+<div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-471037938" class="gridLayout-471037938-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 aem-Grid--phone--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid tp__margin-top--sm aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn aem-GridColumn--default--20 aem-GridColumn--offset--default--2 aem-GridColumn--phone--24 aem-GridColumn--offset--phone--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1894559873" class="gridLayout-1894559873-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid grid__bg-color--light-gray grid__border-radius-top-left grid__border-radius-top-right grid__border-radius-bottom-left grid__border-radius-bottom-right grid__border-radius-none--mobile aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-877177571" class="gridLayout-877177571-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 aem-Grid--phone--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid tp__margin-top--xxl tp__margin-bottom--xxl aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--22 aem-GridColumn aem-GridColumn--default--20 aem-GridColumn--offset--phone--1 aem-GridColumn--offset--default--2"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1702625824" class="gridLayout-1702625824-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="text text__type--eyebrow text__color--dusk-purple text__weight--bold text__size--24 text__align--left--mobile text__align--center aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    <div class="author-rte-styling  ">
+        <p>Business Resource Center</p>
+</div>
+</div>
+<div class="text text__align--left--mobile text__align--center aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    <div class="author-rte-styling  ">
+        <h1>Resources for managing accounts payables</h1>
+</div>
+</div>
+<div class="text text__align--left--mobile text__align--center aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    <div class="author-rte-styling  ">
+        <p>Expand your knowledge with resources for better business strategies. Stay up-to-date with trending topics, insights, and research.</p>
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1702625824" value="gridLayout-1702625824"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1702625824"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1702625824"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1702625824"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1702625824"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-877177571" value="gridLayout-877177571"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-877177571"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-877177571"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-877177571"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-877177571"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1894559873" value="gridLayout-1894559873"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1894559873"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1894559873"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1894559873"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1894559873"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-471037938" value="gridLayout-471037938"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-471037938"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-471037938"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-471037938"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-471037938"/>
+    </div>
+
+</div>
+<div class="gridlayoutcontainer responsivegrid tp__margin-top--xxxl tp__margin-bottom--xxxl aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--22 aem-GridColumn aem-GridColumn--default--20 aem-GridColumn--offset--phone--1 aem-GridColumn--offset--default--2"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-2053164433" class="gridLayout-2053164433-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="htmlcontainer aem-GridColumn aem-GridColumn--default--12">
+
+<style>
+/*podcast*/
+.cmp-truist-cards-list-v1 .mb__pills:nth-child(2) {display: none;}
+/*calculators*/
+.cmp-truist-cards-list-v1 .mb__pills:nth-child(4) {display: none;}
+</style></div>
+<div class="cmp-truist-cards-list-v1 aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"> 
+ 
+    <div class="cardview-component  dynamic-cards truist-color-theme" id="cardlist-842461807" data-cardlist-api="/content/truist-bank/us/en/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center/jcr:content/root/maintag_copy/par2/gridlayoutcontainer/par2/responsivegrid/gridlayoutcontainer__1159834413/par2/truist_cardslist.offset" data-grid-row-element="3" data-view-model="GridView" data-itemperpage="12" data-pagination-type="loadmore" data-page-type="newspage" data-error-message="Result(s) 0" data-enable-autoload="false" data-enable-toggle-grid-list="false" data-disable-see-more-less-view="false" data-wa-component="card_list">
+        
+           <div class="container">
+            
+                <div class="row cards-filters-container">
+                    
+                    <div id="filter-pills" class="filter-pills">
+                        <!-- this is the container to style, mobile view-->
+                        <div class="filter-pills__pill-container">
+                            <!-- this is the container to style, desktop view-->
+                            <span class="filter-pills__media-type text--gray">
+                                Filter by media type:
+                            </span>
+                            <div class="pill--container pill-container">
+                                <div class="pill-container--max-width">
+                                    
+                                        
+                                            <div class="mb__pills p--relative filter-pill">
+                                                <input type="checkbox" id="id-1606193876" value="truistbank:content/media-global/article" data-wa-track-clk="" data-wa-linktype="interaction" data-wa-linkname="" data-text="Article" class="p--absolute pill-select"/>
+                                                <div class="filter-pills__pill">
+                                                    <label for="id-1606193876">
+                                                        <span>
+                                                            Article
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="mb__pills p--relative filter-pill">
+                                                <input type="checkbox" id="id-1933002978" value="truistbank:content/media-global/podcast" data-wa-track-clk="" data-wa-linktype="interaction" data-wa-linkname="" data-text="Podcast" class="p--absolute pill-select"/>
+                                                <div class="filter-pills__pill">
+                                                    <label for="id-1933002978">
+                                                        <span>
+                                                            Podcast
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="mb__pills p--relative filter-pill">
+                                                <input type="checkbox" id="id-1634187737" value="truistbank:content/media-global/video" data-wa-track-clk="" data-wa-linktype="interaction" data-wa-linkname="" data-text="Video" class="p--absolute pill-select"/>
+                                                <div class="filter-pills__pill">
+                                                    <label for="id-1634187737">
+                                                        <span>
+                                                            Video
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="mb__pills p--relative filter-pill">
+                                                <input type="checkbox" id="id--1412272028" value="truistbank:content/media-global/calculator" data-wa-track-clk="" data-wa-linktype="interaction" data-wa-linkname="" data-text="Calculator" class="p--absolute pill-select"/>
+                                                <div class="filter-pills__pill">
+                                                    <label for="id--1412272028">
+                                                        <span>
+                                                            Calculator
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="mb__pills p--relative filter-pill">
+                                                <input type="checkbox" id="id-1801869304" value="truistbank:content/media-global/press-releases" data-wa-track-clk="" data-wa-linktype="interaction" data-wa-linkname="" data-text="Press releases" class="p--absolute pill-select"/>
+                                                <div class="filter-pills__pill">
+                                                    <label for="id-1801869304">
+                                                        <span>
+                                                            Press releases
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            </div>
+                            <div class="filter-pills__resources text--truistpurple">
+                                <p id="filter-pills__results" aria-live="polite" aria-atomic="true" class="filter-pills__results-counter">
+                                </p>
+                                <p>resources</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <div class="list-grid-container">
+                <!-- Start -->
+                <div class="grid-group-item"></div>
+                <!-- End -->
+            </div>
+
+            <div class="page-marker">
+                <div class="load-more-button"> <a href="#" class="pg-show-more hide"></a>
+                </div>
+                <div class="show-less-container">
+                    <a href="#" class="pg-show-less hide"></a>
+                </div>
+            </div>
+
+            <ul class="light-theme simple-pagination custom-card-pagination"></ul>
+
+        </div>
+        <!-- container ends-->
+
+        <div class="cardview-cloners hide">
+
+            <div class="js-cardview-parts-mgmteampage">
+                <div class="js-cardview-row">
+                    <div class="grid-view-container"></div>
+
+                    <div role="region" class="up-arrow-icon">
+                        <div aria-label=""></div>
+                    </div>
+                </div>
+
+                <div class="js-cardview-item">
+                    <div class="item item-view-list card">
+                        <div class="imgcont">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" alt="{0}" data-src="{1}"/>
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-body">
+                                <h4 class="item-heading">{0}</h4>
+                                <div class="item-description">{2}</div>
+                                <div class="card-footer">
+                                    <a href="javascript:void(0);" role="button" aria-expanded="false" data-wa-track-clk="1" data-wa-linktype="interaction" data-wa-component="dynamic_card|{0}" class="btn more-item js-expand" aria-owns="{0}">
+                                        <span class="bio-up-arrow"></span>
+                                        <span class="bio-down-arrow hide"></span>
+                                        <span class="screen-reader"> &nbsp; about {0}</span>
+                                        <span class="caret"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-cont">
+                            <div class="dy-card-media-type">{6}</div>
+                            <div class="dy-card-category">{7}</div>
+                            <div class="dy-card-publication">{8}</div>
+                            <div class="dy-card-author">{9}</div>
+                            <div class="dy-card-publication-date">{12}</div>
+                            <div class="dy-card-duration">{10}</div>
+                            <div class="dy-card-title">{11}</div>
+                        </div>
+                        <div>
+                            <span class="grid-up-down-arrow"></span>
+                        </div>
+                    </div>
+
+                    <div role="region" class="up-arrow" aria-label="Learn more about {0}">
+                        <p>{3}</p>
+                    </div>
+
+                </div>
+            </div>
+            <!--news page-->
+            <div class="js-cardview-parts-newspage">
+                <div class="js-cardview-row">
+                    <div class="grid-view-container ame-grid-layout"></div>
+                </div>
+                <div class="js-cardview-item">
+                    <div class="newsgridcont card">
+                        <div class="grid-teaser-text card-body" aria-label="{5}">
+                            <a data-wa-track-clk="1" data-wa-linktype="navigation" target="{4}" href="javascript:void(0);" data-target="{4}" data-href="{3}" class="description-text">{1}</a>
+                        </div>
+                        <div class="grid-description-text card-footer">
+                            <div class="newshd">{2}</div>
+                            <div class="newsdate">{6}</div>
+                        </div>
+                        <div class="property-cont">
+                            <div class="dy-card-media-type">{8}</div>
+                            <div class="dy-card-category">{9}</div>
+                            <div class="dy-card-publication">{10}</div>
+                            <div class="dy-card-author">{11}</div>
+                            <div class="dy-card-publication-date">{14}</div>
+                            <div class="dy-card-duration">{12}</div>
+                            <div class="dy-card-title">{13}</div>
+                        </div>
+                    </div>
+
+                    <div role="listitem" class="list-data-item">
+                        <a data-wa-track-clk="1" data-wa-linktype="navigation" target="{4}" href="javascript:void(0);" data-target="{4}" data-href="{3}" class="description-text">{1}<span class="screen-reader"></span></a>
+                        <div aria-label="{2}" class="date-format">
+                            <div class="news-column">{2}</div>
+                            <div class="news-column">{7}</div>
+                        </div>
+                        <div class="property-cont">
+                            <div class="dy-card-media-type">{8}</div>
+                            <div class="dy-card-category">{9}</div>
+                            <div class="dy-card-publication">{10}</div>
+                            <div class="dy-card-author">{11}</div>
+                            <div class="dy-card-publication-date">{14}</div>
+                            <div class="dy-card-duration">{12}</div>
+                            <div class="dy-card-title">{13}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-2053164433" value="gridLayout-2053164433"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-2053164433"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-2053164433"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-2053164433"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-2053164433"/>
+    </div>
+
+</div>
+<div class="gridlayoutcontainer responsivegrid grid__bg-color--light-gray tp__margin-bottom--xl grid__border-radius-top-left grid__border-radius-top-right grid__border-radius-bottom-left grid__border-radius-bottom-right grid__border-radius-none--mobile aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--20 aem-GridColumn--offset--default--2"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1611689676" class="gridLayout-1611689676-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid tp__margin-top--xl aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1954093876" class="gridLayout-1954093876-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--tablet--24 aem-Grid--default--24 ">
+    
+    <div class="text text__size--smaller aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--20 aem-GridColumn--offset--default--2">
+
+    <div class="author-rte-styling  ">
+        <h2>Don’t see what you’re looking for?</h2>
+</div>
+</div>
+<div class="gridlayoutcontainer responsivegrid tp__margin-top--sm tp__margin-bottom--xxl aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--22 aem-GridColumn--offset--default--0 aem-GridColumn--tablet--24"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1762053426" class="gridLayout-1762053426-orientation-change author-orientation-change   static-card__custom--even-columns static-card__custom--column-spacing-2 static-card__custom--single-border">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 aem-Grid--phone--24 ">
+    
+    <div class="staticcard static-card__custom--remove-badge static-card__custom--remove-eyebrow static-card__custom--add-custom-content static-card__custom--remove-image static-card__custom--remove-title aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--default--2 aem-GridColumn--phone--24 aem-GridColumn--offset--phone--0">
+    <div class="truist-global-staticcard-column  truist-global-staticcard-column-transparent " data-wa-component="static_component">
+        <!--Below divs are card contents, as per the requirement almost all contents are optional, use sly-test condition inject elements as per content author requirement-->
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-img-top">
+                <div class="truist-global-staticcard-img-badge">
+                    
+                </div>
+                <img class="truist-global-staticcard-img" src="../../../../static.truist.com/content/dam/truist-bank/us/en/images/fpo/fpo-icon.png" alt=""/>
+            </div>
+        </div>
+        
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-eyebrow truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                
+            </div>
+        </div>
+
+        
+            
+        
+
+        
+        <div class="truist-global-staticcard-row">
+            <p class="truist-global-staticcard-cardcontent truist-global-staticcard-content-padding">
+                Find articles to help you make the best decisions for your company.
+            </p>
+        </div>
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-card-cta-button truist-global-staticcard-content-padding">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="experiencefragment aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    
+    
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1476810509" class="gridLayout-1476810509-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="options-reveal aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+<div class=" options-reveal-comp" data-wa-component="dropdown options reveal" id="optionsReveal-1693323804">
+    <div class="truist-drop-down-box">
+        <span class="h2-to-h3">Show me more about:</span>
+        <form>
+            <div class="truist-select-wrapper">
+                <select class="select-content" aria-label="I need help with">
+                    <option selected="selected" value="#">Category</option>
+                    
+                        <option value="/commercial-corporate-institutional/business-resource-center" data-new-tab="false">
+                            All topics
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/strategic-advice/business-resource-center" data-new-tab="false">
+                            Strategic advice
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/financing/business-resource-center" data-new-tab="false">
+                            Financing
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/manage-cash-flow/credit-cards/business-resource-center" data-new-tab="false">
+                            Commercial card
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center" data-new-tab="false">
+                            Payables
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/manage-cash-flow/receivables/business-resource-center" data-new-tab="false">
+                            Receivables
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/manage-cash-flow/sweep-solutions" data-new-tab="false">
+                            Liquidity (Sweep)
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/risk-management/check-fraud-control/business-resource-center" data-new-tab="false">
+                            Check fraud
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/risk-management/ach-fraud-control/business-resource-center" data-new-tab="false">
+                            Online ACH fraud
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/industry-expertise/auto-dealer/business-resource-center" data-new-tab="false">
+                            Auto dealers
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/industry-expertise/auto-dealer/dealer-financial-services/business-resource-center" data-new-tab="false">
+                            Dealer financial services
+                        </option>
+                    
+                        <option value="/commercial-corporate-institutional/employee-benefits/business-resource-center" data-new-tab="false">
+                            Employee benefits
+                        </option>
+                    
+                </select>
+            </div>
+            <input class="go-button" type="button" value="Go" data-wa-track-clk="1" data-wa-linkname="#" aria-label="Go"/>
+        </form>
+    </div>
+    <div class="default-content reveal-content">
+        
+        <div>
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    
+    
+</div>
+</div>
+    </div>
+    <div id="options-unveil" class="actual-content reveal-content" style="display: none;">
+        
+        <div>
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    
+    
+</div>
+</div>
+    </div>
+</div></div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1476810509" value="gridLayout-1476810509"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1476810509"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1476810509"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1476810509"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1476810509"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+</div>
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="staticcard static-card__custom--remove-badge static-card__custom--remove-eyebrow static-card__custom--add-custom-content static-card__custom--remove-image static-card__custom--remove-title aem-GridColumn--phone--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--24 aem-GridColumn--offset--phone--0">
+    <div class="truist-global-staticcard-column  truist-global-staticcard-column-transparent " data-wa-component="static_component">
+        <!--Below divs are card contents, as per the requirement almost all contents are optional, use sly-test condition inject elements as per content author requirement-->
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-img-top">
+                <div class="truist-global-staticcard-img-badge">
+                    
+                </div>
+                <img class="truist-global-staticcard-img" src="../../../../static.truist.com/content/dam/truist-bank/us/en/images/fpo/fpo-icon.png" alt=""/>
+            </div>
+        </div>
+        
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-eyebrow truist-global-staticcard-content-padding" role="heading" aria-level="2">
+                
+            </div>
+        </div>
+
+        
+            
+        
+
+        
+        <div class="truist-global-staticcard-row">
+            <p class="truist-global-staticcard-cardcontent truist-global-staticcard-content-padding">
+                Stay in the know with our latest articles.
+            </p>
+        </div>
+        <div class="truist-global-staticcard-row">
+            <div class="truist-global-staticcard-card-cta-button truist-global-staticcard-content-padding">
+                <div>
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-1906487511" class="gridLayout-1906487511-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="cta button aem-GridColumn aem-GridColumn--default--12">
+    
+
+
+            
+        
+        
+            
+        
+
+        <div id="cta-983482278" class="author-cta-styling global-cta-btn  gl-align-left  " data-wa-component="CTA">
+            
+            
+            
+            <a href="../../business-resource-center.html" target="_self" class=" cta-983482278     gl-align-center   " data-wa-track-clk="1" data-wa-linkname="Learn more" data-wa-linktype="navigation" data-wa-linkurl="/commercial-corporate-institutional/business-resource-center">Learn more
+                
+                
+            </a>
+        </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1906487511" value="gridLayout-1906487511"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1906487511"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1906487511"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1906487511"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1906487511"/>
+    </div>
+
+</div>
+
+    
+</div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1762053426" value="gridLayout-1762053426"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1762053426"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1762053426"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1762053426"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1762053426"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1954093876" value="gridLayout-1954093876"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1954093876"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1954093876"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1954093876"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1954093876"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-1611689676" value="gridLayout-1611689676"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-1611689676"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-1611689676"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-1611689676"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-1611689676"/>
+    </div>
+
+</div>
+<div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--20 aem-GridColumn--offset--default--2"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="gridLayout-2018832549" class="gridLayout-2018832549-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="page-sharing page-sharing__alignment--center aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+	<div id="pagesharing-473766879" class="cmp-pagesharing  horizontal-desktop" data-wa-component="page-sharing" role="navigation" aria-label="social media">
+		<p>Share this page:</p>
+		<a href="https://twitter.com/intent/tweet?url=https://www.truist.com/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center&amp;text=Business+Resource+Center" class="pagesharing-icon1" target="_blank" rel="noreferrer" aria-label="Share on Twitter" data-wa-linkname="twitter share" data-wa-linktype="external"></a>
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.truist.com/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center" class="pagesharing-icon2" target="_blank" rel="noreferrer" aria-label="Share on Facebook" data-wa-linkname="facebook share" data-wa-linktype="external"></a>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.truist.com/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center&amp;title=Business+Resource+Center" class="pagesharing-icon3" target="_blank" rel="noreferrer" aria-label="Share on LinkedIn" data-wa-linkname="linkedin share" data-wa-linktype="external"></a>
+		<button class="pagesharing-icon4" aria-live="assertive" aria-label="copy Page URL to clipboard" data-wa-linkname="clipboard_click" data-wa-linktype="interaction" data-wa-track-clk="1" data-pageurl="https://www.truist.com/commercial-corporate-institutional/manage-cash-flow/payables/business-resource-center" id="pagesharing-473766879-linkcopy">
+			<div class="text-copied" aria-label="Page URL copied to clipboard">URL Copied!
+			</div>
+		</button>
+	</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-gridLayout-2018832549" value="gridLayout-2018832549"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-gridLayout-2018832549"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-gridLayout-2018832549"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-gridLayout-2018832549"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-gridLayout-2018832549"/>
+    </div>
+
+</div>
+
+    
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-main-grid" value="main-grid"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-main-grid"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-main-grid"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-main-grid"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-main-grid"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+</main></div>
+<div class="footertag aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+<footer class="global-footer author-footertag-styling">
+	
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="footer-grid" class="footer-grid-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="footer-section-disclosure" class="footer-section-disclosure-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="accordion aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+
+    <div>
+    <div style="display:none">
+        Component ID : "accordionGridLayout-1396148670"<br/>
+        Model : "disclaimer"<br/>
+        Position : "left"<br/>
+    </div>
+    <!-- Edit Mode -->
+    
+    
+        <!-- Display Mode -->
+        
+        
+        
+
+        
+        
+            
+            
+            
+        
+        
+        <div class=" accordion accordion-toggle-container arrow-down " id="disclaimer-accordion-accordionGridLayout-1396148670">
+            <div>
+                <div class="border-container ">
+                    
+                    
+                        
+                    
+                    <a class="accordion-bookmark"></a>
+                    
+                        <div class="accordion-card-header accordion-card-header-body" id="accordionGridLayout-1396148670-heading-1">
+                            <button aria-expanded="true" type="button" class="btn btn-link btn-container-width accordion-button-left " data-toggle="collapse" data-target="#accordionGridLayout-1396148670-collapseArrow-1">
+                                <span class="accordion-text  truist--icon-carat-up  after" data-open-text="Disclosures" data-closed-text="Disclosures">Disclosures</span>
+                            </button>
+                        </div>
+                    
+
+                    
+                    
+
+                    <div role="group" id="accordionGridLayout-1396148670-collapseArrow-1" class="collapse show " aria-labelledby="accordionGridLayout-1396148670-heading-1" data-parent="#disclaimer-accordion-accordionGridLayout-1396148670">
+                        <div class="card-body">
+                            <div class="footer-disclosures">
+                                <div>
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="footer-section-disclosure-container" class="footer-section-disclosure-container-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="footer-local-disclosure-top" class="footer-local-disclosure-top-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    
+    
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-footer-local-disclosure-top" value="footer-local-disclosure-top"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-footer-local-disclosure-top"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-footer-local-disclosure-top"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-footer-local-disclosure-top"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-footer-local-disclosure-top"/>
+    </div>
+
+</div>
+<div class="experiencefragment aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    
+    
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+
+    <div class="author-rte-styling  ">
+        <p>Truist Bank, Member FDIC. © 2022 Truist Financial Corporation. Truist, the Truist logo and Truist Purple are service marks of Truist Financial Corporation.</p>
+<p>Equal Housing Lender<img src="http://static.truist.com/content/dam/global-images/equal-housing-opportunity.webp" class="eh-logo" alt="" width="25" height="17"/></p>
+<p style="font-weight: 600;">Investment and Insurance Products:<br />
+• Are Not FDIC or any other Government Agency Insured • Are Not Bank Guaranteed • May Lose Value</p>
+<p>Services provided by the following affiliates of Truist Financial Corporation (Truist): Banking products and services, including loans and deposit accounts, are provided by Truist Bank, Member FDIC. Trust and investment management services are provided by Truist Bank, and Truist Delaware Trust Company. Securities, brokerage accounts and /or insurance (including annuities) are offered by Truist Investment Services, Inc., and P.J. Robb Variable Corp., which are SEC registered broker-dealers, members <a href="../../../speedbump/truist-speedbumpa2f0.html?url=https://www.finra.org/#/">FINRA</a> <a href="../../../speedbump/truist-speedbump544a.html?url=https://www.sipc.org/">SIPC</a> and a licensed insurance agency where applicable. Investment advisory services are offered by Truist Advisory Services, Inc., GFO Advisory Services, LLC, Sterling Capital Management, LLC, and Precept Advisory Group, LLC, each SEC registered investment advisers. Sterling Capital Funds are advised by Sterling Capital Management, LLC. Insurance products and services are offered through McGriff Insurance Services, Inc. Life insurance products are offered through Truist Life Insurance Services, a division of Crump Life Insurance Services, Inc., AR license #100103477. Both McGriff and Crump are wholly owned subsidiaries of Truist Insurance Holdings, Inc.</p>
+<p>Mortgage products and services are offered through Truist Bank. All Truist mortgage professionals are registered on the Nationwide Mortgage Licensing System &amp; Registry (NMLS), which promotes uniformity and transparency throughout the residential real estate industry. <a href="../../../speedbump/truist-speedbump959f.html?url=https://www.nmlsconsumeraccess.org/">Search the NMLS Registry</a>.</p>
+<p>Comments regarding tax implications are informational only. Truist and its representatives do not provide tax or legal advice. You should consult your individual tax or legal professional before taking any action that may have tax or legal consequences.</p>
+<p>&quot;Truist Advisors&quot; may be officers and/or associated persons of the following affiliates of Truist, Truist Investment Services, Inc., and/or Truist Advisory Services, Inc. Truist Wealth, International Wealth, Center for Family Legacy, Business Owner Specialty Group, Sports and Entertainment Group, and Legal and Medical Specialty Groups are trade names used by Truist Bank, Truist Investment Services, Inc., and Truist Advisory Services, Inc.</p>
+<p>Truist Securities is a trademark of Truist Financial Corporation. Truist Securities is a trade name for the corporate and investment banking services of Truist Financial Corporation and its subsidiaries. All rights reserved. Securities and strategic advisory services are provided by Truist Securities, Inc., member <a href="../../../speedbump/truist-speedbumpa2f0.html?url=https://www.finra.org/#/">FINRA</a> and <a href="../../../speedbump/truist-speedbump544a.html?url=https://www.sipc.org/">SIPC</a>. Lending, financial risk management, and treasury management and payment services are offered by Truist Bank. Deposit products are offered by Truist Bank.</p>
+</div>
+</div>
+<div class="htmlcontainer aem-GridColumn aem-GridColumn--default--12">
+
+<p id="language"><strong>Limited English Proficiency Support:</strong>  Applications, agreements, disclosures, and other servicing communications provided by Truist Bank and its subsidiary businesses will be provided in English. As a result, it will be necessary for customers to speak, read and understand English or to have an appropriate translator assisting them. Truist offers the following resources for consumers that have Limited English Proficiency: </p>
+<ul>
+<li>Multilingual teammates available at our Multicultural Banking Centers</li>
+<li>Materials for some products and services are available in Spanish, Korean, Vietnamese, Mandarin, and other languages spoken in the communities we serve.</li>
+<li>Phone assistance in Spanish at 844-4TRUIST (844-487-8478), option 9. For assistance in other languages please speak to a representative directly. </li>
+
+</ul>
+<p><strong>New York City residents:</strong> Translation or other language access services may be available. When calling our office regarding collection activity, if you speak a language other than English and need verbal translation services, be sure to inform the representative. A description and translation of commonly-used debt collection terms is available in multiple languages at <a href="../../../speedbump/truist-speedbumpf430.html?url=http://www.nyc.gov/dca" target="_blank">http://www.nyc.gov/dca.</a></p>
+<ul>
+
+<li>Limited English Proficiency Support</li>
+<li>New York City residents</li>
+</ul>
+<p><strong>Borrowers with Limited English Proficiency (LEP) needing information can use the following resources:</strong> </p>
+
+<ul>
+<li>The Consumer Financial Protection Bureau (CFPB) offers help in more than 180 languages, call 855-411-2372 from 8 a.m. to 8 p.m. ET, Monday through Friday for assistance by phone.</li>
+
+<li style="word-break: break-word;">CFPB additional resources for homeowners seeking payment assistance in 7 additional languages: Spanish, Traditional Chinese, Vietnamese, Korean, Tagalog, and Arabic.<br>
+<a href="../../../speedbump/truist-speedbumpc721.html?url=http://www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/help-for-homeowners/" target="_blank">www.consumerfinance.gov/coronavirus/mortgage-and-housing-assistance/help-for-homeowners/</a></li>
+</ul></div>
+
+    
+</div>
+
+</div>
+</div>
+<div class="gridlayoutcontainer responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0"><!-- Initialize -->
+
+    
+    
+    
+    
+
+    
+
+    <!-- for background color option, set class names -->
+    
+    
+
+    <!-- for background gradient option, set class names -->
+    
+    
+
+    <!-- for background image option, set class names -->
+    
+    
+
+    
+    <div id="footer-local-disclosure-bottom" class="footer-local-disclosure-bottom-orientation-change author-orientation-change   ">
+        
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    <div class="responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+
+<div class="aem-Grid aem-Grid--24 aem-Grid--default--24 ">
+    
+    
+    
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-footer-local-disclosure-bottom" value="footer-local-disclosure-bottom"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-footer-local-disclosure-bottom"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-footer-local-disclosure-bottom"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-footer-local-disclosure-bottom"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-footer-local-disclosure-bottom"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-footer-section-disclosure-container" value="footer-section-disclosure-container"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-footer-section-disclosure-container"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-footer-section-disclosure-container"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-footer-section-disclosure-container"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-footer-section-disclosure-container"/>
+    </div>
+
+</div>
+
+    
+</div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-footer-section-disclosure" value="footer-section-disclosure"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-footer-section-disclosure"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-footer-section-disclosure"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-footer-section-disclosure"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-footer-section-disclosure"/>
+    </div>
+
+</div>
+<div class="experiencefragment aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--24 aem-GridColumn--offset--default--0">
+
+    
+    
+
+    
+
+
+
+<div class="xf-content-height">
+    
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="htmlcontainer aem-GridColumn aem-GridColumn--default--12">
+
+<style>
+.footer-primary-link .footer__logo {
+    width: 190px;
+}
+
+@media (min-width: 1200px) {
+.footer-primary-link .footer__section {
+    max-width: 1600px;
+}
+}
+
+@media (min-width: 768px) {
+.footer-primary-link .footer-nav {
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.footer-primary-link .footer-nav--social {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+}
+</style></div>
+<div class="footer-global-component aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+
+
+	
+	 
+		<h2 class="sr-only">Site footer</h2>
+	<div class="content footer-primary-link" data-wa-component="footer">
+		<div class="footer">
+			
+			
+				<div class="footer__section">
+					<div class="footer__details footer__details--disclosures">
+			     		
+			         	 
+
+    
+    	<div class="footer-nav-item footer-nav-item--logo">
+		    <a href="../../../index.html" class="footer__link">
+		    	<!-- TODO Quest: what's the class for img tag instead svg -->
+		        
+		            <img class="footer__logo" src="http://static.truist.com/content/dam/global-images/truist-logo.svg" href="#" alt="Truist"/>
+		            <img width="100" height="100" class="mobile-logo" src="http://static.truist.com/content/dam/global-images/truist-logo.svg" href="#" alt="Truist"/>
+					<!-- <img alt="" src="" class="mobile-truist-logo"> -->
+		        
+		        
+		    </a>
+		</div>
+    
+            
+
+			           
+			         	
+				    	 
+    
+		<ul class="footer-nav footer-nav--disclosures">
+			
+			
+				
+					<li class="footer-nav-item">
+						
+
+    
+		<a class="footer__link" href="../../../privacy.html" data-wa-track-clk="1" data-wa-linkname="Privacy">
+			 
+    
+    	Privacy
+    
+	   
+		</a>
+    
+
+					</li>
+				
+			
+				
+					<li class="footer-nav-item">
+						
+
+    
+		<a class="footer__link" href="../../../fraud-and-security.html" data-wa-track-clk="1" data-wa-linkname="Fraud &amp; security">
+			 
+    
+    	Fraud &amp; security
+    
+	   
+		</a>
+    
+
+					</li>
+				
+			
+				
+					<li class="footer-nav-item">
+						
+
+    
+		<a class="footer__link" href="../../../terms-and-conditions.html" data-wa-track-clk="1" data-wa-linkname="Terms and conditions">
+			 
+    
+    	Terms and conditions
+    
+	   
+		</a>
+    
+
+					</li>
+				
+			
+		</ul>   
+    
+       
+				            
+					</div>
+				</div>
+			
+		  
+               
+		
+			<div class="footer__section">
+				     <div class="footer__links-container">
+				       
+    
+		<div data-wa-component="accordian" class="tru-grid tru-grid--1-columns js-tru-grid tru-grid--gutters tru-grid--2-columns-md-up tru-grid--4-columns-lg-up">
+			
+			
+			
+			     	 <div class="accordion js-tru-accordion js-tru-accordion__section footer__details__header">
+						<div class="accordion__header js-tru-accordion__trigger  ">
+									<div class="accordion__title " role="heading" aria-level="3" data-wa-track-clk="1" data-wa-linktype="interaction">
+										 
+    
+    	Banking products
+    
+
+						  			</div>
+						 	 	<span class="accordion__icon " aria-hidden="true">
+						      		<svg class="tru-icon js-tru-accordion__icon tru-collapsible__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">
+								       	 <path d="M22 18a.997.997 0 01-.707-.293L12 8.414l-9.293 9.293a1 1 0 01-1.414-1.414l10-10a1 1 0 011.414 0l10 10A1 1 0 0122 18z">
+								       	 </path>
+						      		</svg>
+						  		</span>
+						</div>
+				       	<div class="accordion__content  js-tru-accordion__target is-initially-expanded" role="navigation">
+							
+							<ul>
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../checking.html" data-wa-track-clk="1">
+			 
+    
+    	Checking
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../commercial-corporate-institutional.html" data-wa-track-clk="1">
+			 
+    
+    	Commercial
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../credit-cards.html" data-label="personal" data-wa-track-clk="1">
+			 
+    
+    	Credit cards<span class="sr-only"> personal</span>
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../loans.html" data-wa-track-clk="1">
+			 
+    
+    	Loans<span class="sr-only"> personal</span>
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../mortgage.html" data-wa-track-clk="1">
+			 
+    
+    	Mortgage
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../digital-banking.html" data-wa-track-clk="1">
+			 
+    
+    	Online &amp; mobile
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../open-account.html" data-wa-track-clk="1">
+			 
+    
+    	Open an account
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../savings/compare.html" data-wa-track-clk="1">
+			 
+    
+    	Savings<span class="sr-only"> personal</span>
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../small-business.html" data-wa-track-clk="1">
+			 
+    
+    	Small business
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../wealth.html" data-wa-track-clk="1">
+			 
+    
+    	Wealth
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+							</ul>
+				       </div>
+			     </div>	     
+			
+			     	 <div class="accordion js-tru-accordion js-tru-accordion__section footer__details__header">
+						<div class="accordion__header js-tru-accordion__trigger  ">
+									<div class="accordion__title " role="heading" aria-level="3" data-wa-track-clk="1" data-wa-linktype="interaction">
+										 
+    
+    	About Truist
+    
+
+						  			</div>
+						 	 	<span class="accordion__icon " aria-hidden="true">
+						      		<svg class="tru-icon js-tru-accordion__icon tru-collapsible__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">
+								       	 <path d="M22 18a.997.997 0 01-.707-.293L12 8.414l-9.293 9.293a1 1 0 01-1.414-1.414l10-10a1 1 0 011.414 0l10 10A1 1 0 0122 18z">
+								       	 </path>
+						      		</svg>
+						  		</span>
+						</div>
+				       	<div class="accordion__content  js-tru-accordion__target  " role="navigation">
+							
+							<ul>
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../who-we-are/about-truist.html" data-wa-track-clk="1">
+			 
+    
+    	About us
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../care.html" data-wa-track-clk="1">
+			 
+    
+    	Care
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../purpose/community.html" data-wa-track-clk="1">
+			 
+    
+    	Community
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../purpose.html" data-wa-track-clk="1">
+			 
+    
+    	Purpose
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../purpose/truist-foundation.html" data-wa-track-clk="1">
+			 
+    
+    	Truist Foundation
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="https://www.truistleadershipinstitute.com/" data-wa-track-clk="1" target="_blank" rel="noreferrer">
+			 
+    
+    	Truist Leadership Institute
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="https://www.truistsecurities.com/" data-wa-track-clk="1" target="_blank" rel="noreferrer">
+			 
+    
+    	Truist Securities
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../who-we-are/truist-ventures/about-us.html" data-wa-track-clk="1">
+			 
+    
+    	Truist Ventures
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+							</ul>
+				       </div>
+			     </div>	     
+			
+			     	 <div class="accordion js-tru-accordion js-tru-accordion__section footer__details__header">
+						<div class="accordion__header js-tru-accordion__trigger  ">
+									<div class="accordion__title " role="heading" aria-level="3" data-wa-track-clk="1" data-wa-linktype="interaction">
+										 
+    
+    	Resources
+    
+
+						  			</div>
+						 	 	<span class="accordion__icon " aria-hidden="true">
+						      		<svg class="tru-icon js-tru-accordion__icon tru-collapsible__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">
+								       	 <path d="M22 18a.997.997 0 01-.707-.293L12 8.414l-9.293 9.293a1 1 0 01-1.414-1.414l10-10a1 1 0 011.414 0l10 10A1 1 0 0122 18z">
+								       	 </path>
+						      		</svg>
+						  		</span>
+						</div>
+				       	<div class="accordion__content  js-tru-accordion__target  " role="navigation">
+							
+							<ul>
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="https://careers.truist.com/" data-wa-track-clk="1" target="_blank" rel="noreferrer">
+			 
+    
+    	Careers
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../purpose/cra.html" data-wa-track-clk="1">
+			 
+    
+    	Community Reinvestment Act
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../who-we-are/diversity-equity-inclusion.html" data-wa-track-clk="1">
+			 
+    
+    	Diversity and inclusion
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../facts-about-banking.html" data-wa-track-clk="1">
+			 
+    
+    	Facts about banking
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="https://ir.truist.com/" data-wa-track-clk="1" target="_blank" rel="noreferrer">
+			 
+    
+    	Investor relations
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../money-mindset.html" data-wa-track-clk="1">
+			 
+    
+    	Money and Mindset
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="https://media.truist.com/" data-wa-track-clk="1" target="_blank" rel="noreferrer">
+			 
+    
+    	Newsroom
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../who-we-are/suppliers.html" data-wa-track-clk="1">
+			 
+    
+    	Supplier diversity
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+							</ul>
+				       </div>
+			     </div>	     
+			
+			     	 <div class="accordion js-tru-accordion js-tru-accordion__section footer__details__header">
+						<div class="accordion__header js-tru-accordion__trigger  ">
+									<div class="accordion__title " role="heading" aria-level="3" data-wa-track-clk="1" data-wa-linktype="interaction">
+										 
+    
+    	Support
+    
+
+						  			</div>
+						 	 	<span class="accordion__icon " aria-hidden="true">
+						      		<svg class="tru-icon js-tru-accordion__icon tru-collapsible__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">
+								       	 <path d="M22 18a.997.997 0 01-.707-.293L12 8.414l-9.293 9.293a1 1 0 01-1.414-1.414l10-10a1 1 0 011.414 0l10 10A1 1 0 0122 18z">
+								       	 </path>
+						      		</svg>
+						  		</span>
+						</div>
+				       	<div class="accordion__content  js-tru-accordion__target  " role="navigation">
+							
+							<ul>
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../accessibility.html" data-wa-track-clk="1">
+			 
+    
+    	Accessibility <span class="footer-icon"></span>
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../contact.html#emergency" data-wa-track-clk="1">
+			 
+    
+    	Client emergency resources
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../payment-relief/personal-loans.html" data-wa-track-clk="1">
+			 
+    
+    	Consumer payment relief hub
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../finder.html" data-wa-track-clk="1">
+			 
+    
+    	Find a banker or advisor
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../locations.html" data-wa-track-clk="1">
+			 
+    
+    	Find a branch or ATM
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="../../../contact.html" data-wa-track-clk="1">
+			 
+    
+    	Help Center
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="https://truistclient.force.com/s/" data-wa-track-clk="1" target="_blank" rel="noreferrer">
+			 
+    
+    	Schedule a branch appointment
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+									
+										<li class="footer-nav-item">
+											
+
+    
+		<a class="footer__link" href="_tel_8444878478.html" data-wa-track-clk="1">
+			 
+    
+    	844-4TRUIST (844-487-8478)
+    
+	   
+		</a>
+    
+
+										</li>
+											
+								
+							</ul>
+				       </div>
+			     </div>	     
+				
+		</div>	
+      
+
+				     </div>
+				  </div>
+		
+		
+		
+		 
+		
+         
+		
+			
+			
+		
+		
+		
+		
+		
+		
+		   <div class="footer__section">
+			     <hr role="presentation"/>
+			     
+			     
+				
+		    	
+    
+            
+ 
+	      
+	      		
+		    	
+    
+		<ul class="footer-nav footer-nav--social">
+			
+			
+				
+					<li class="footer-nav-item--social">
+						<a data-wa-track-clk="1" data-wa-linkname="Twitter" class="tru-button--link footer-nav-link" href="https://twitter.com/TruistNews" target="_blank">
+							<img class="footer-nav-social-icon" src="http://static.truist.com/content/dam/global-images/social-icons/twitter-solid.svg" href="https://twitter.com/TruistNews" alt="Twitter"/>
+						</a>
+					</li>
+				
+			
+				
+					<li class="footer-nav-item--social">
+						<a data-wa-track-clk="1" data-wa-linkname="linkedin" class="tru-button--link footer-nav-link" href="https://www.linkedin.com/company/truistfinancialcorporation" target="_blank">
+							<img class="footer-nav-social-icon" src="http://static.truist.com/content/dam/global-images/social-icons/linkedin-solid.svg" href="https://www.linkedin.com/company/truistfinancialcorporation" alt="linkedin"/>
+						</a>
+					</li>
+				
+			
+				
+					<li class="footer-nav-item--social">
+						<a data-wa-track-clk="1" data-wa-linkname="Facebook" class="tru-button--link footer-nav-link" href="https://www.facebook.com/truist" target="_blank">
+							<img class="footer-nav-social-icon" src="http://static.truist.com/content/dam/global-images/social-icons/facebook-solid.svg" href="https://www.facebook.com/truist" alt="Facebook"/>
+						</a>
+					</li>
+				
+			
+				
+					<li class="footer-nav-item--social">
+						<a data-wa-track-clk="1" data-wa-linkname="YouTube" class="tru-button--link footer-nav-link" href="https://www.youtube.com/channel/UC10Dmvy2Ih93O8hCg_UYN6w" target="_blank">
+							<img class="footer-nav-social-icon" src="http://static.truist.com/content/dam/global-images/social-icons/youtube-solid.svg" href="https://www.youtube.com/channel/UC10Dmvy2Ih93O8hCg_UYN6w" alt="YouTube"/>
+						</a>
+					</li>
+				
+			
+				
+					<li class="footer-nav-item--social">
+						<a data-wa-track-clk="1" data-wa-linkname="Instgram" class="tru-button--link footer-nav-link" href="https://www.instagram.com/truist" target="_blank">
+							<img class="footer-nav-social-icon" src="http://static.truist.com/content/dam/global-images/social-icons/instagram.svg" href="https://www.instagram.com/truist" alt="Instgram"/>
+						</a>
+					</li>
+				
+			
+		</ul>   
+    
+
+		       
+			</div>
+		
+			
+	</div>  
+		 
+		 
+		
+		
+			<div class="footer-highlight">
+			  <div class="footer__section footer__section--squish">
+			    	 
+	<p class="footer__legal">
+	     &#169; 2022, 
+	      
+    
+    	Truist. All Rights Reserved.
+
+    
+
+	</p>
+
+			  </div>
+			</div>
+		
+			 
+	</div>
+
+
+
+	
+
+</div>
+
+    
+</div>
+
+</div>
+</div>
+
+    
+</div>
+
+    </div>
+    
+    <div class="input-hidden-container">
+        <input type="hidden" class="componentclass" id="componentclass-footer-grid" value="footer-grid"/>
+        <input type="hidden" class="desktopclass" id="desktopclass-footer-grid"/>
+        <input type="hidden" class="mobileClass" id="mobileClass-footer-grid"/>
+        <input type="hidden" class="labelMobile" id="labelMobile-footer-grid"/>
+        <input type="hidden" class="labeldesktop" id="labeldesktop-footer-grid"/>
+    </div>
+
+</div>
+
+    
+</div>
+
+</footer></div>
+
+    
+</div>
+</div>
+
+     <div id="tru-floating--bottom-right" class="tru-floating--bottom-right">
+     	<div id="idLpMessagingHelp"></div>
+     </div>
+</div>
+            
+    
+    
+<!---  footer library starts -->
+
+
+
+
+
+
+<script src="../../../../search.truist.com/searchblox/truistheader/facet.js" async>
+</script>
+
+<script src="../../../../search.truist.com/searchblox/truistheader/build.js" async>
+</script>
+
+
+
+
+
+
+
+    
+    
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery.min.f65891607efbe75b84a8031849cec6c7.js"></script>
+<script src="../../../etc.clientlibs/clientlibs/granite/utils.min.308082b4c347f4fec37ffef277d39d0e.js"></script>
+<script src="../../../etc.clientlibs/clientlibs/granite/jquery/granite.min.d9075d4175ab7b0e3ccf4305a4089645.js"></script>
+<script src="../../../etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.f01ce1db0b144a9a853f5accf9564ad4.js"></script>
+
+
+
+    
+       
+     
+     
+
+    
+        
+            
+                
+    
+<script src="../../../etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.d41d8cd98f00b204e9800998ecf8427e.js"></script>
+
+
+
+            
+        
+    
+<!-- Author specific CSS -->
+
+    
+
+
+
+
+<!---  footer library ends -->
+
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+
+
+<!-- Truist adobe launch Mandatory script Starts-->
+<script type="text/javascript"> 
+            try { 
+                    _satellite.pageBottom(); 
+                  } catch ( error ) { 
+            if ( error ) { 
+            console.log( error ); 
+          } 
+        } 
+ </script>
+<!-- Truist adobe launch Mandatory script Ends-->
+
+    </body>
+</html>

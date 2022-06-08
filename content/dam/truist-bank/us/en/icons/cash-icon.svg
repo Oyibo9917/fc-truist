@@ -1,0 +1,27 @@
+<svg class="cash-icon-65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" x="0px" y="0px"
+	 viewBox="0 0 65 65">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#2E1A47;stroke-width:2;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#2E1A47;stroke-width:2;}
+	.st3{fill:#2E1A47;stroke:#2E1A47;stroke-linejoin:round;}
+</style>
+<g id="Group_16752" transform="translate(-84.506 -90.488)">
+	<g id="Rectangle_3726">
+		<rect id="Rectangle_4463" x="86.4" y="100.1" class="st0" width="61.8" height="37.8"/>
+		<rect id="Rectangle_4464" x="87.6" y="101.3" class="st1" width="59.3" height="35.3"/>
+		<rect id="Rectangle_5250" x="87.6" y="136.6" class="st1" width="59.3" height="4.3"/>
+		<rect id="Rectangle_5251" x="87.6" y="140.9" class="st1" width="59.3" height="4.3"/>
+	</g>
+	<path id="Path_12013" class="st2" d="M135.5,137.1c0,0,0.5-11.1,12.2-12.2"/>
+	<path id="Path_12014" class="st2" d="M135.5,100.9c0,0,0.5,11.1,12.2,12.2"/>
+	<path id="Path_12015" class="st2" d="M99.8,100.9c0,0-0.5,11.1-12.2,12.2"/>
+	<path id="Path_12016" class="st2" d="M99.8,137.1c0,0-0.5-11.1-12.2-12.2"/>
+	<path id="Union_196" class="st3" d="M116.6,130v-2.1h-3c-2,0.1-3.7-1.5-3.8-3.5c0-0.4,0.4-0.7,0.8-0.7c0.4,0,0.7,0.3,0.7,0.7
+		c0,1.2,1.1,2.1,2.2,2.1h3v-6.2h-3c-2,0.1-3.7-1.5-3.8-3.5v-2.1c0.1-2,1.8-3.5,3.8-3.5h3v-2.1c0.1-0.4,0.4-0.7,0.8-0.7
+		c0.3,0,0.6,0.3,0.7,0.7v2.1h3c2-0.1,3.7,1.5,3.8,3.5c-0.1,0.4-0.4,0.7-0.9,0.6c-0.3,0-0.6-0.3-0.6-0.6c-0.1-1.2-1.1-2.1-2.2-2.1h-3
+		v6.2h3c2-0.1,3.7,1.5,3.8,3.5v2.1c-0.1,2-1.8,3.5-3.8,3.5h-3v2.1c-0.1,0.4-0.4,0.7-0.8,0.7C116.9,130.6,116.6,130.3,116.6,130
+		L116.6,130z M121.1,126.5c1.2,0,2.2-0.9,2.2-2.1v-2.1c-0.1-1.2-1.1-2.1-2.2-2.1h-3v6.2L121.1,126.5z M111.3,114.8v2.1
+		c0,1.2,1.1,2.1,2.2,2.1h3v-6.2h-3C112.4,112.6,111.4,113.6,111.3,114.8L111.3,114.8z"/>
+</g>
+</svg>
